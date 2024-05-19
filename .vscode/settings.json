@@ -5,7 +5,5 @@
   "[typescript]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
   },
-  "i18n-ally.localesPaths": [
-    "messages"
-  ]
+  "i18n-ally.localesPaths": ["messages"]
 }
