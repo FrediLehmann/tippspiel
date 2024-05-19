@@ -10,7 +10,11 @@ const fontSans = Inter({
   variable: "--font-sans",
 });
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
   const t = await getTranslations({ locale, namespace: "Home.metadata" });
 
   return {
@@ -28,7 +32,12 @@ export default async function LocaleLayout({
 }) {
   return (
     <html lang={locale}>
-      <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable,
+        )}
+      >
         {children}
       </body>
     </html>
