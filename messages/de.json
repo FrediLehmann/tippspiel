@@ -15,6 +15,12 @@
     "signup": "Registrieren sie sich.",
     "signupRedirect": "Sie haben noch kein Konto?"
   },
+  "Signup": {
+    "metadata": {
+      "description": "Registerieren Sie sich für das Tippspiel",
+      "title": "Tippspiel | Registrieren"
+    }
+  },
   "common": {
     "login": "Login",
     "signInForm": {

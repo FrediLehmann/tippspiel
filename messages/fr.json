@@ -15,6 +15,12 @@
     "signup": "S'inscrire.",
     "signupRedirect": "Vous n'avez pas encore de compte?"
   },
+  "Signup": {
+    "metadata": {
+      "description": "Page d'inscription",
+      "title": "Tippspiel | S'inscrire"
+    }
+  },
   "common": {
     "login": "Se connecter",
     "signInForm": {

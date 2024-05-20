@@ -15,6 +15,12 @@
     "signupRedirect": "Don't have an account yet?",
     "signup": "Sign up."
   },
+  "Signup": {
+    "metadata": {
+      "description": "Signup page",
+      "title": "Tippspiel | Signup"
+    }
+  },
   "common": {
     "signInForm": {
       "email": {
