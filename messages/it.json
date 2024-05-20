@@ -2,7 +2,7 @@
   "Home": {
     "metadata": {
       "description": "Home page",
-      "title": "Home"
+      "title": "Tippspiel | Home"
     }
   },
   "Login": {
@@ -68,7 +68,7 @@
         "label": "Parola d'ordine"
       }
     },
-    "signup": "Iscrizione.",
+    "signup": "Iscrizione",
     "submit": "Invia"
   }
 }

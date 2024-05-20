@@ -2,7 +2,7 @@
   "Home": {
     "metadata": {
       "description": "Home page",
-      "title": "Home"
+      "title": "Tippspiel | Home"
     }
   },
   "Login": {
@@ -20,8 +20,8 @@
       "description": "Registerieren Sie sich für das Tippspiel",
       "title": "Tippspiel | Registrieren"
     },
-    "pageDescription": "Melden Sie sich an, um auf das Tippspiel zuzugreifen und daran teilzunehmen",
-    "pageTitle": "Melden Sie sich an",
+    "pageDescription": "Registrieren Sie sich, um auf das Tippspiel zuzugreifen und daran teilzunehmen",
+    "pageTitle": "Registrieren",
     "signin": "Anmelden.",
     "signinRedirect": "Sie haben bereits ein Konto?"
   },
@@ -68,7 +68,7 @@
         "label": "Passwort"
       }
     },
-    "signup": "Melden Sie sich an.",
+    "signup": "Registrieren",
     "submit": "Speichern"
   }
 }

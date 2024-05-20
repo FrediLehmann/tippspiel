@@ -2,7 +2,7 @@
   "Home": {
     "metadata": {
       "description": "Home page",
-      "title": "Home"
+      "title": "Tippspiel | Home"
     }
   },
   "Login": {
@@ -67,7 +67,7 @@
         "label": "Password"
       }
     },
-    "signup": "Sign up.",
+    "signup": "Sign up",
     "login": "Login",
     "submit": "Submit"
   }
