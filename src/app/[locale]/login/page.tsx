@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 
-import { SignInForm } from "@/components";
+import { LoginCard } from "./components";
 
 export async function generateMetadata({
   params: { locale },
@@ -24,8 +24,8 @@ export default function Login({
   const redirectUrl = searchParams?.redirect;
 
   return (
-    <main>
-      <SignInForm />
+    <main className="max-w-md mx-auto px-2 mt-12 md:mt-24">
+      <LoginCard />
     </main>
   );
 }

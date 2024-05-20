@@ -33,10 +33,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
-        )}
+        className={cn("bg-background font-sans antialiased", fontSans.variable)}
       >
         {children}
       </body>

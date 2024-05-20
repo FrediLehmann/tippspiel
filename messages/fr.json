@@ -9,9 +9,12 @@
     "metadata": {
       "description": "Page de connexion",
       "title": "Login"
-    }
+    },
+    "pageDescription": "Connectez-vous pour accéder et participer au jeu de pronostics",
+    "pageTitle": "Se connecter"
   },
   "common": {
+    "login": "Se connecter",
     "signInForm": {
       "email": {
         "label": "E-mail"

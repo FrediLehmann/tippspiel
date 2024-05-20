@@ -9,9 +9,12 @@
     "metadata": {
       "description": "Pagina di login",
       "title": "Login"
-    }
+    },
+    "pageDescription": "Effettua il login per accedere e partecipare al gioco pronostico",
+    "pageTitle": "Login"
   },
   "common": {
+    "login": "Login",
     "signInForm": {
       "email": {
         "label": "E-mail"

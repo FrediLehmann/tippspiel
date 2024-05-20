@@ -9,9 +9,12 @@
     "metadata": {
       "description": "Loginseite",
       "title": "Login"
-    }
+    },
+    "pageDescription": "Melden Sie sich an, um auf das Tippspiel zuzugreifen und daran teilzunehmen",
+    "pageTitle": "Anmeldung"
   },
   "common": {
+    "login": "Login",
     "signInForm": {
       "email": {
         "label": "Email"
