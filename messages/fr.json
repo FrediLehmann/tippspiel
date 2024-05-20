@@ -19,7 +19,11 @@
     "metadata": {
       "description": "Page d'inscription",
       "title": "Tippspiel | S'inscrire"
-    }
+    },
+    "pageDescription": "Inscrivez-vous pour accéder et participer au jeu de pronostics",
+    "pageTitle": "S'inscrire",
+    "signin": "Se connecter.",
+    "signinRedirect": "Vous avez déjà un compte?"
   },
   "common": {
     "login": "Se connecter",
@@ -44,6 +48,27 @@
         "label": "Mot de passe"
       }
     },
+    "signUpForm": {
+      "email": {
+        "label": "E-mail"
+      },
+      "formSchemaMessages": {
+        "email": {
+          "required": "Adresse e-mail est nécessaire.",
+          "validated": "Adresse e-mail invalide."
+        },
+        "password": {
+          "maxLength": "Mot de passe requis",
+          "minLength": "Le mot de passe doit comporter au moins 8 caractères",
+          "pattern": "Le mot de passe doit contenir au moins un chiffre, une lettre majuscule, une lettre minuscule et un caractère spécial",
+          "required": "Le mot de passe peut contenir jusqu'à 100 caractères"
+        }
+      },
+      "password": {
+        "label": "Mot de passe"
+      }
+    },
+    "signup": "S'inscrire.",
     "submit": "Soumettre"
   }
 }

@@ -1,9 +1,9 @@
 "use client";
 
 import { z } from "zod";
+import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useTranslations } from "next-intl";
 import { LogIn } from "lucide-react";
 
 import {
@@ -16,11 +16,10 @@ import {
   FormMessage,
   Input,
 } from "@/components/ui";
-import { Link } from "@/lib/translation";
 
 import { getFormSchema } from "./getFormSchema";
 
-export default function SignInForm() {
+export default function SignUpForm() {
   const t = useTranslations();
 
   const formSchema = getFormSchema(t);
@@ -43,7 +42,7 @@ export default function SignInForm() {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>{t("common.signInForm.email.label")}</FormLabel>
+                <FormLabel>{t("common.signUpForm.email.label")}</FormLabel>
                 <FormControl>
                   <Input {...field} />
                 </FormControl>
@@ -56,18 +55,11 @@ export default function SignInForm() {
             name="password"
             render={({ field }) => (
               <FormItem>
-                <div className="flex justify-between items-center">
-                  <FormLabel>{t("common.signInForm.password.label")}</FormLabel>
-                  <Button asChild variant="link" className="py-0 h-6">
-                    <Link href="/forgot-password">
-                      {t("common.signInForm.password.forgot")}
-                    </Link>
-                  </Button>
-                </div>
+                <FormLabel>{t("common.signUpForm.password.label")}</FormLabel>
                 <FormControl>
                   <Input
                     type="password"
-                    autoComplete="current-password"
+                    autoComplete="new-password"
                     {...field}
                   />
                 </FormControl>
@@ -78,7 +70,7 @@ export default function SignInForm() {
         </div>
         <Button type="submit" className="w-full mt-7">
           <LogIn className="w-5 h-5 mr-2" />
-          {t("common.login")}
+          {t("common.signup")}
         </Button>
       </form>
     </Form>

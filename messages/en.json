@@ -19,7 +19,11 @@
     "metadata": {
       "description": "Signup page",
       "title": "Tippspiel | Signup"
-    }
+    },
+    "pageTitle": "Sign up",
+    "pageDescription": "Sign up to access and take part in the prediction game",
+    "signinRedirect": "Already have an account?",
+    "signin": "Sign in."
   },
   "common": {
     "signInForm": {
@@ -43,6 +47,27 @@
         "forgot": "Forgot password?"
       }
     },
+    "signUpForm": {
+      "email": {
+        "label": "Email"
+      },
+      "formSchemaMessages": {
+        "email": {
+          "required": "Email address is required.",
+          "validated": "Invalid email address."
+        },
+        "password": {
+          "maxLength": "Password is required",
+          "minLength": "The password must be at least 8 characters long",
+          "pattern": "The password must contain at least one number, one uppercase letter, one lowercase letter, and one special character",
+          "required": "The password can be up to 100 characters long"
+        }
+      },
+      "password": {
+        "label": "Password"
+      }
+    },
+    "signup": "Sign up.",
     "login": "Login",
     "submit": "Submit"
   }
