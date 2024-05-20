@@ -1,5 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
+import { SignupCard } from "./components";
+
 export async function generateMetadata({
   params: { locale },
 }: {
@@ -21,5 +23,9 @@ export default function Login({
   // use redirectUrl to redirect user back to the page they were on before logging in
   const redirectUrl = searchParams?.redirect;
 
-  return <main className="max-w-md mx-auto px-2 mt-12 md:mt-24"></main>;
+  return (
+    <main className="max-w-md mx-auto px-2 mt-12 md:mt-24">
+      <SignupCard />
+    </main>
+  );
 }
