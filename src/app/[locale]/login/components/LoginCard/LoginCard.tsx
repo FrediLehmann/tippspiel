@@ -2,7 +2,6 @@
 
 import { useTranslations } from "next-intl";
 
-import { SignInForm } from "@/components";
 import {
   Button,
   Card,
@@ -14,6 +13,8 @@ import {
 } from "@/components/ui";
 import { FacebookIcon, GoogleIcon } from "@/components/Icons";
 import { Link } from "@/lib/translation";
+
+import { SignInForm } from "./components";
 
 export default function LoginCard() {
   const t = useTranslations();
