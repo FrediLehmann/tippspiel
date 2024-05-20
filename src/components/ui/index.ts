@@ -9,4 +9,5 @@ export {
   FormMessage,
   useFormField,
 } from "./form";
+export { Input } from "./input";
 export { Label } from "./label";

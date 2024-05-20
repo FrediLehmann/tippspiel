@@ -1,8 +1,34 @@
 {
   "Home": {
     "metadata": {
-      "title": "Home",
-      "description": "Home page"
+      "description": "Home page",
+      "title": "Home"
+    }
+  },
+  "common": {
+    "signInForm": {
+      "email": {
+        "label": "Email"
+      },
+      "formSchemaMessages": {
+        "email": {
+          "required": "Email address is required.",
+          "validated": "Invalid email address."
+        },
+        "password": {
+          "maxLength": "Password is required",
+          "minLength": "The password must be at least 8 characters long",
+          "pattern": "The password must contain at least one number, one uppercase letter, one lowercase letter, and one special character",
+          "required": "The password can be up to 100 characters long"
+        }
+      }
+    },
+    "submit": "Submit"
+  },
+  "Login": {
+    "metadata": {
+      "description": "Login page",
+      "title": "Login"
     }
   }
 }

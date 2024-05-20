@@ -1,8 +1,34 @@
 {
   "Home": {
     "metadata": {
-      "title": "Home",
-      "description": "Home page"
+      "description": "Home page",
+      "title": "Home"
     }
+  },
+  "Login": {
+    "metadata": {
+      "description": "Pagina di login",
+      "title": "Login"
+    }
+  },
+  "common": {
+    "signInForm": {
+      "email": {
+        "label": "E-mail"
+      },
+      "formSchemaMessages": {
+        "email": {
+          "required": "L'indirizzo e-mail è obbligatorio.",
+          "validated": "Indirizzo email non valido."
+        },
+        "password": {
+          "maxLength": "E 'richiesta la password",
+          "minLength": "La password deve essere lunga almeno 8 caratteri",
+          "pattern": "La password deve contenere almeno un numero, una lettera maiuscola, una lettera minuscola e un carattere speciale",
+          "required": "La password può contenere fino a 100 caratteri"
+        }
+      }
+    },
+    "submit": "Invia"
   }
 }
