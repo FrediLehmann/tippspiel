@@ -16,6 +16,7 @@ import {
   FormMessage,
   Input,
 } from "@/components/ui";
+import { Link } from "@/lib/translation";
 
 import { getFormSchema } from "./getFormSchema";
 
@@ -36,7 +37,7 @@ export default function SignInForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)}>
-        <div className="space-y-3">
+        <div className="space-y-5">
           <FormField
             control={form.control}
             name="email"
@@ -55,7 +56,14 @@ export default function SignInForm() {
             name="password"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>{t("common.signInForm.password.label")}</FormLabel>
+                <div className="flex justify-between items-center">
+                  <FormLabel>{t("common.signInForm.password.label")}</FormLabel>
+                  <Button asChild variant="link" className="py-0 h-4">
+                    <Link href="/forgot-password">
+                      {t("common.signInForm.password.forgot")}
+                    </Link>
+                  </Button>
+                </div>
                 <FormControl>
                   <Input type="password" {...field} />
                 </FormControl>

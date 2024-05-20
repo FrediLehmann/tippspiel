@@ -11,7 +11,9 @@
       "title": "Tippspiel | Login"
     },
     "pageDescription": "Melden Sie sich an, um auf das Tippspiel zuzugreifen und daran teilzunehmen",
-    "pageTitle": "Anmeldung"
+    "pageTitle": "Anmeldung",
+    "signup": "Registrieren sie sich.",
+    "signupRedirect": "Sie haben noch kein Konto?"
   },
   "common": {
     "login": "Login",
@@ -32,6 +34,7 @@
         }
       },
       "password": {
+        "forgot": "Passwort vergessen?",
         "label": "Passwort"
       }
     },

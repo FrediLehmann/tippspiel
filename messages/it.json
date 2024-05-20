@@ -11,7 +11,9 @@
       "title": "Tippspiel | Login"
     },
     "pageDescription": "Effettua il login per accedere e partecipare al gioco pronostico",
-    "pageTitle": "Login"
+    "pageTitle": "Login",
+    "signup": "Iscrizione.",
+    "signupRedirect": "Non hai ancora un conto?"
   },
   "common": {
     "login": "Login",
@@ -32,6 +34,7 @@
         }
       },
       "password": {
+        "forgot": "Ha dimenticato la password?",
         "label": "Parola d'ordine"
       }
     },

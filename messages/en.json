@@ -11,7 +11,9 @@
       "title": "Tippspiel | Login"
     },
     "pageDescription": "Login to access and take part in the prediction game",
-    "pageTitle": "Login"
+    "pageTitle": "Login",
+    "signupRedirect": "Don't have an account yet?",
+    "signup": "Sign up."
   },
   "common": {
     "signInForm": {
@@ -31,7 +33,8 @@
         }
       },
       "password": {
-        "label": "Password"
+        "label": "Password",
+        "forgot": "Forgot password?"
       }
     },
     "login": "Login",
