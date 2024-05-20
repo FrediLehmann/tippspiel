@@ -27,6 +27,9 @@
           "pattern": "La password deve contenere almeno un numero, una lettera maiuscola, una lettera minuscola e un carattere speciale",
           "required": "La password può contenere fino a 100 caratteri"
         }
+      },
+      "password": {
+        "label": "Parola d'ordine"
       }
     },
     "submit": "Invia"

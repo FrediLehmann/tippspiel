@@ -27,6 +27,9 @@
           "pattern": "Le mot de passe doit contenir au moins un chiffre, une lettre majuscule, une lettre minuscule et un caractère spécial",
           "required": "Le mot de passe peut contenir jusqu'à 100 caractères"
         }
+      },
+      "password": {
+        "label": "Mot de passe"
       }
     },
     "submit": "Soumettre"

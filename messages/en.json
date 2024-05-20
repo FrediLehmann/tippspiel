@@ -10,6 +10,9 @@
       "email": {
         "label": "Email"
       },
+      "password": {
+        "label": "Password"
+      },
       "formSchemaMessages": {
         "email": {
           "required": "Email address is required.",

@@ -27,6 +27,9 @@
           "pattern": "Das Passwort muss mindestens eine Zahl, einen Großbuchstaben, einen Kleinbuchstaben und ein Sonderzeichen enthalten",
           "required": "Das Passwort kann bis zu 100 Zeichen lang sein"
         }
+      },
+      "password": {
+        "label": "Passwort"
       }
     },
     "submit": "Speichern"
