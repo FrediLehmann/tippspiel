@@ -1,12 +1,17 @@
 "use client";
 
+import { useState, useTransition } from "react";
+import { useRouter } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
 import { z } from "zod";
-import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { LogIn } from "lucide-react";
+import { AlertCircleIcon, Loader2Icon, LogInIcon } from "lucide-react";
 
 import {
+  Alert,
+  AlertDescription,
+  AlertTitle,
   Button,
   Form,
   FormControl,
@@ -15,12 +20,22 @@ import {
   FormLabel,
   FormMessage,
   Input,
+  useToast,
 } from "@/components/ui";
 
 import { getFormSchema } from "./getFormSchema";
+import { signUp } from "./signUp";
 
 export default function SignUpForm() {
   const t = useTranslations();
+  const locale = useLocale();
+
+  const [isPending, startTransition] = useTransition();
+  const [error, setError] = useState(false);
+
+  const router = useRouter();
+
+  const { toast } = useToast();
 
   const formSchema = getFormSchema(t);
   type FormSchema = z.infer<typeof formSchema>;
@@ -30,7 +45,28 @@ export default function SignUpForm() {
   });
 
   function onSubmit(values: FormSchema) {
-    console.log(values);
+    startTransition(() => {
+      async function signMeUp() {
+        try {
+          const result = await signUp(values, locale);
+          if (!result.success) {
+            throw new Error("Could not sign up");
+          }
+
+          toast({
+            title: t("common.signUpForm.signupSuccessToast.title"),
+            description: t("common.signUpForm.signupSuccessToast.description"),
+            duration: 15000,
+          });
+
+          router.push("/login");
+        } catch (e) {
+          setError(true);
+        }
+      }
+
+      signMeUp();
+    });
   }
 
   return (
@@ -67,11 +103,41 @@ export default function SignUpForm() {
               </FormItem>
             )}
           />
+          <FormField
+            control={form.control}
+            name="passwordConfirmation"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>
+                  {t("common.signUpForm.passwordConfirmation.label")}
+                </FormLabel>
+                <FormControl>
+                  <Input type="password" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
         </div>
-        <Button type="submit" className="w-full mt-7">
-          <LogIn className="w-5 h-5 mr-2" />
+        <Button type="submit" className="w-full mt-7" disabled={isPending}>
+          {!isPending ? (
+            <LogInIcon className="mr-2 h-5 w-5" />
+          ) : (
+            <Loader2Icon className="mr-2 h-5 w-5 animate-spin" />
+          )}
           {t("common.signup")}
         </Button>
+        {error && (
+          <Alert variant="destructive" className="mt-4">
+            <AlertCircleIcon className="h-4 w-4" />
+            <AlertTitle>
+              {t("common.signUpForm.signupFailAlert.title")}
+            </AlertTitle>
+            <AlertDescription>
+              {t("common.signUpForm.signupFailAlert.description")}
+            </AlertDescription>
+          </Alert>
+        )}
       </form>
     </Form>
   );

@@ -2,6 +2,7 @@ import "./globals.css";
 
 import { Inter } from "next/font/google";
 
+import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 
 const fontSans = Inter({
@@ -22,6 +23,7 @@ export default async function LocaleLayout({
         className={cn("bg-background font-sans antialiased", fontSans.variable)}
       >
         {children}
+        <Toaster />
       </body>
     </html>
   );

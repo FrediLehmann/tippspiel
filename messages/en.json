@@ -67,10 +67,24 @@
           "minLength": "The password must be at least 8 characters long",
           "pattern": "The password must contain at least one number, one uppercase letter, one lowercase letter, and one special character",
           "required": "The password can be up to 100 characters long"
+        },
+        "passwordConfirmation": {
+          "match": "Passwords do not match"
         }
       },
       "password": {
         "label": "Password"
+      },
+      "passwordConfirmation": {
+        "label": "Password confirmation"
+      },
+      "signupSuccessToast": {
+        "title": "Sign up successful",
+        "description": "Confirm you email address and sign in."
+      },
+      "signupFailAlert": {
+        "title": "Sign up failed",
+        "description": "An error occurred while signing up. Please try again."
       }
     },
     "signup": "Sign up",

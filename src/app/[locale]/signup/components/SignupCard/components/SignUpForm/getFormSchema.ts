@@ -8,25 +8,32 @@ export function getFormSchema(t: (key: string) => string) {
       email: z
         .string()
         .min(1, {
-          message: t("common.signInForm.formSchemaMessages.email.required"),
+          message: t("common.signUpForm.formSchemaMessages.email.required"),
         })
         .email({
-          message: t("common.signInForm.formSchemaMessages.email.validated"),
+          message: t("common.signUpForm.formSchemaMessages.email.validated"),
         }),
       password: z
         .string()
         .min(1, {
-          message: t("common.signInForm.formSchemaMessages.password.required"),
+          message: t("common.signUpForm.formSchemaMessages.password.required"),
         })
         .min(8, {
-          message: t("common.signInForm.formSchemaMessages.password.minLength"),
+          message: t("common.signUpForm.formSchemaMessages.password.minLength"),
         })
         .max(100, {
-          message: t("common.signInForm.formSchemaMessages.password.maxLength"),
+          message: t("common.signUpForm.formSchemaMessages.password.maxLength"),
         })
         .regex(passwordRegex, {
-          message: t("common.signInForm.formSchemaMessages.password.pattern"),
+          message: t("common.signUpForm.formSchemaMessages.password.pattern"),
         }),
+      passwordConfirmation: z.string(),
     })
-    .required();
+    .required()
+    .refine((data) => data.password === data.passwordConfirmation, {
+      message: t(
+        "common.signUpForm.formSchemaMessages.passwordConfirmation.match",
+      ),
+      path: ["passwordConfirmation"],
+    });
 }
