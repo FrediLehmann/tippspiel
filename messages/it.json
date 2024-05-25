@@ -1,4 +1,10 @@
 {
+  "ForgotPassword": {
+    "metadata": {
+      "description": "Pagina Reimposta password",
+      "pageTitle": "Tipspiel | \nPassword dimenticata"
+    }
+  },
   "Home": {
     "metadata": {
       "description": "Home page",

@@ -1,4 +1,10 @@
 {
+  "ForgotPassword": {
+    "metadata": {
+      "description": "Page de réinitialisation du mot de passe",
+      "pageTitle": "Jeu de tippsiel | \nMot de passe oublié"
+    }
+  },
   "Home": {
     "metadata": {
       "description": "Home page",

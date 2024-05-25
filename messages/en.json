@@ -25,6 +25,12 @@
     "signinRedirect": "Already have an account?",
     "signin": "Sign in."
   },
+  "ForgotPassword": {
+    "metadata": {
+      "pageTitle": "Tippspiel | Forgot Passowrd",
+      "description": "Reset password page"
+    }
+  },
   "common": {
     "signInForm": {
       "email": {

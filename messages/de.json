@@ -1,4 +1,10 @@
 {
+  "ForgotPassword": {
+    "metadata": {
+      "description": "Seite „Passwort zurücksetzen“.",
+      "pageTitle": "Tippspiel | \nPasswort vergessen"
+    }
+  },
   "Home": {
     "metadata": {
       "description": "Home page",
