@@ -22,6 +22,7 @@ import {
   Input,
   useToast,
 } from "@/components/ui";
+import { PasswordInput } from "@/components";
 
 import { getFormSchema } from "./getFormSchema";
 import { signUp } from "./signUp";
@@ -93,11 +94,7 @@ export default function SignUpForm() {
               <FormItem>
                 <FormLabel>{t("common.signUpForm.password.label")}</FormLabel>
                 <FormControl>
-                  <Input
-                    type="password"
-                    autoComplete="new-password"
-                    {...field}
-                  />
+                  <PasswordInput autoComplete="new-password" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -112,7 +109,7 @@ export default function SignUpForm() {
                   {t("common.signUpForm.passwordConfirmation.label")}
                 </FormLabel>
                 <FormControl>
-                  <Input type="password" {...field} />
+                  <PasswordInput autoComplete="off" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>

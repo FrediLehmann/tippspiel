@@ -17,6 +17,7 @@ import {
   Input,
 } from "@/components/ui";
 import { Link } from "@/lib/translation";
+import { PasswordInput } from "@/components";
 
 import { getFormSchema } from "./getFormSchema";
 
@@ -59,17 +60,11 @@ export default function SignInForm() {
                 <div className="flex justify-between items-center">
                   <FormLabel>{t("common.signInForm.password.label")}</FormLabel>
                   <Button asChild variant="link" className="py-0 h-6">
-                    <Link href="/forgot-password">
-                      {t("common.signInForm.password.forgot")}
-                    </Link>
+                    <Link href="/forgot-password">{t("common.signInForm.password.forgot")}</Link>
                   </Button>
                 </div>
                 <FormControl>
-                  <Input
-                    type="password"
-                    autoComplete="current-password"
-                    {...field}
-                  />
+                  <PasswordInput autoComplete="current-password" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
