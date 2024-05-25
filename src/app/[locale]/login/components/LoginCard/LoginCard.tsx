@@ -35,7 +35,7 @@ export default function LoginCard() {
         </div>
         <div className="flex items-center mt-8 mb-10">
           <Separator className="shrink" />
-          <span className="mx-3 text-nowrap text-sm">
+          <span className="pb-[2px] mx-3 text-nowrap text-sm text-neutral-600">
             {t("Login.sozialLogin.separator")}
           </span>
           <Separator className="shrink" />
