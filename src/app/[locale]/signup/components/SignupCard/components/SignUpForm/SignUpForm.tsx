@@ -42,7 +42,11 @@ export default function SignUpForm() {
   type FormSchema = z.infer<typeof formSchema>;
   const form = useForm<FormSchema>({
     resolver: zodResolver(formSchema),
-    defaultValues: {},
+    defaultValues: {
+      email: "",
+      password: "",
+      passwordConfirmation: "",
+    },
   });
 
   function onSubmit(values: FormSchema) {

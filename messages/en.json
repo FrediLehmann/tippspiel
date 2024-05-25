@@ -54,6 +54,10 @@
       "password": {
         "label": "Password",
         "forgot": "Forgot password?"
+      },
+      "signinFailAlert": {
+        "title": "Sign in failed",
+        "description": "An error occurred while signing in. Please try again."
       }
     },
     "signUpForm": {
@@ -92,6 +96,7 @@
     },
     "signup": "Sign up",
     "login": "Login",
-    "submit": "Submit"
+    "submit": "Submit",
+    "passwordInputAriaLabel": "Password input"
   }
 }

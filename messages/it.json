@@ -36,6 +36,7 @@
   },
   "common": {
     "login": "Login",
+    "passwordInputAriaLabel": "Inserimento della password",
     "signInForm": {
       "email": {
         "label": "E-mail"
@@ -55,6 +56,10 @@
       "password": {
         "forgot": "Ha dimenticato la password?",
         "label": "Parola d'ordine"
+      },
+      "signinFailAlert": {
+        "description": "Si è verificato un errore durante l'accesso. Riprova.",
+        "title": "Accesso fallito"
       }
     },
     "signUpForm": {

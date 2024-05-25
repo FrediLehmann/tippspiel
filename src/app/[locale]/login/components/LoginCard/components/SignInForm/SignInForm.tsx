@@ -1,12 +1,17 @@
 "use client";
 
+import { useState, useTransition } from "react";
+import { useRouter } from "next/navigation";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useTranslations } from "next-intl";
-import { LogIn } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
+import { AlertCircleIcon, Loader2Icon, LogInIcon } from "lucide-react";
 
 import {
+  Alert,
+  AlertDescription,
+  AlertTitle,
   Button,
   Form,
   FormControl,
@@ -20,19 +25,41 @@ import { Link } from "@/lib/translation";
 import { PasswordInput } from "@/components";
 
 import { getFormSchema } from "./getFormSchema";
+import { signIn } from "./signIn";
 
 export default function SignInForm() {
   const t = useTranslations();
+
+  const [isPending, startTransition] = useTransition();
+  const [error, setError] = useState(false);
+  const locale = useLocale();
+
+  const router = useRouter();
 
   const formSchema = getFormSchema(t);
   type FormSchema = z.infer<typeof formSchema>;
   const form = useForm<FormSchema>({
     resolver: zodResolver(formSchema),
-    defaultValues: {},
+    defaultValues: {
+      email: "",
+      password: "",
+    },
   });
 
   function onSubmit(values: FormSchema) {
-    console.log(values);
+    startTransition(() => {
+      async function signMeIn() {
+        try {
+          const result = await signIn(values, locale);
+          if (!result.success) throw new Error("Could not sign in");
+          router.push("/account");
+        } catch (e) {
+          setError(true);
+        }
+      }
+
+      signMeIn();
+    });
   }
 
   return (
@@ -73,10 +100,25 @@ export default function SignInForm() {
             )}
           />
         </div>
-        <Button type="submit" className="w-full mt-7">
-          <LogIn className="w-5 h-5 mr-2" />
+        <Button type="submit" className="w-full mt-7" disabled={isPending}>
+          {!isPending ? (
+            <LogInIcon className="mr-2 h-4 w-4" />
+          ) : (
+            <Loader2Icon className="mr-2 h-4 w-4 animate-spin" />
+          )}
           {t("common.login")}
         </Button>
+        {error && (
+          <Alert variant="destructive" className="mt-4">
+            <AlertCircleIcon className="h-4 w-4" />
+            <AlertTitle>
+              {t("common.signInForm.signinFailAlert.title")}
+            </AlertTitle>
+            <AlertDescription>
+              {t("common.signInForm.signinFailAlert.description")}
+            </AlertDescription>
+          </Alert>
+        )}
       </form>
     </Form>
   );
