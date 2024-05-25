@@ -13,7 +13,10 @@
     "pageDescription": "Login to access and take part in the prediction game",
     "pageTitle": "Login",
     "signupRedirect": "Don't have an account yet?",
-    "signup": "Sign up."
+    "signup": "Sign up.",
+    "sozialLogin": {
+      "separator": "or continue with"
+    }
   },
   "Signup": {
     "metadata": {

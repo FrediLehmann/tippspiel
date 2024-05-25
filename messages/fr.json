@@ -19,7 +19,10 @@
     "pageDescription": "Connectez-vous pour accéder et participer au jeu de pronostics",
     "pageTitle": "Se connecter",
     "signup": "S'inscrire.",
-    "signupRedirect": "Vous n'avez pas encore de compte?"
+    "signupRedirect": "Vous n'avez pas encore de compte?",
+    "sozialLogin": {
+      "separator": "ou continuez avec"
+    }
   },
   "Signup": {
     "metadata": {

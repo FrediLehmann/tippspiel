@@ -19,7 +19,10 @@
     "pageDescription": "Effettua il login per accedere e partecipare al gioco pronostico",
     "pageTitle": "Login",
     "signup": "Iscrizione.",
-    "signupRedirect": "Non hai ancora un conto?"
+    "signupRedirect": "Non hai ancora un conto?",
+    "sozialLogin": {
+      "separator": "o continuare con"
+    }
   },
   "Signup": {
     "metadata": {

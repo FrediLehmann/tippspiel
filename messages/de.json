@@ -19,7 +19,10 @@
     "pageDescription": "Melden Sie sich an, um auf das Tippspiel zuzugreifen und daran teilzunehmen",
     "pageTitle": "Anmeldung",
     "signup": "Registrieren sie sich.",
-    "signupRedirect": "Sie haben noch kein Konto?"
+    "signupRedirect": "Sie haben noch kein Konto?",
+    "sozialLogin": {
+      "separator": "oder hier anmelden"
+    }
   },
   "Signup": {
     "metadata": {

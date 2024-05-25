@@ -27,13 +27,19 @@ export default function LoginCard() {
       </CardHeader>
       <CardContent>
         <SignInForm />
-        <div className="mt-6 items-center text-center text-sm text-neutral-600">
+        <div className="mt-4 items-center text-center text-sm text-neutral-600">
           <span>{t("Login.signupRedirect")}</span>
           <Button asChild variant="link" className="px-1">
             <Link href="/signup">{t("Login.signup")}</Link>
           </Button>
         </div>
-        <Separator className="my-4" />
+        <div className="flex items-center mt-8 mb-10">
+          <Separator className="shrink" />
+          <span className="mx-3 text-nowrap text-sm">
+            {t("Login.sozialLogin.separator")}
+          </span>
+          <Separator className="shrink" />
+        </div>
         <div className="flex flex-col space-y-2">
           <Button variant="outline">
             <GoogleIcon />
