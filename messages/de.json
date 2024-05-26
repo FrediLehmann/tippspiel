@@ -60,6 +60,9 @@
         "title": "Zurücksetzen erfolgreich"
       }
     },
+    "headerNav": {
+      "login": "Anmeldung"
+    },
     "login": "Login",
     "passwordInputAriaLabel": "Passworteingabe",
     "resetPassword": "Passwort zurücksetzen",

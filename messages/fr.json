@@ -60,6 +60,9 @@
         "title": "Réinitialisation réussie"
       }
     },
+    "headerNav": {
+      "login": "Se connecter"
+    },
     "login": "Se connecter",
     "passwordInputAriaLabel": "Saisie du mot de passe",
     "resetPassword": "Réinitialiser le mot de passe",

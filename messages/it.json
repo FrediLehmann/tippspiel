@@ -60,6 +60,9 @@
         "title": "Reimpostazione riuscita"
       }
     },
+    "headerNav": {
+      "login": "Login"
+    },
     "login": "Login",
     "passwordInputAriaLabel": "Inserimento della password",
     "resetPassword": "Resetta la password",

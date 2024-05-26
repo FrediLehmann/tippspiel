@@ -119,6 +119,9 @@
         "description": "An error occurred while resetting the password. Please try again."
       }
     },
+    "headerNav": {
+      "login": "Login"
+    },
     "signup": "Sign up",
     "login": "Login",
     "submit": "Submit",
