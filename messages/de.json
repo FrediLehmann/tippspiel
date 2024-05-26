@@ -3,6 +3,10 @@
     "metadata": {
       "description": "Seite „Passwort zurücksetzen“.",
       "title": "Tippspiel | Passwort vergessen"
+    },
+    "passwordForm": {
+      "cardDescription": "Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen einen Link zum Zurücksetzen Ihres Passworts.",
+      "cardTitle": "Passwort zurücksetzen"
     }
   },
   "Home": {
@@ -35,8 +39,28 @@
     "signinRedirect": "Sie haben bereits ein Konto?"
   },
   "common": {
+    "forgotPasswordForm": {
+      "email": {
+        "label": "Email"
+      },
+      "formSchemaMessages": {
+        "email": {
+          "required": "E-Mailadresse wird benötigt.",
+          "validated": "Ungültige E-Mail-Adresse."
+        }
+      },
+      "resetFailedAlert": {
+        "description": "Beim Zurücksetzen des Passworts ist ein Fehler aufgetreten. \nBitte versuche es erneut.",
+        "title": "Zurücksetzen fehlgeschlagen"
+      },
+      "resetSuccessToast": {
+        "description": "Suchen Sie in Ihren E-Mails nach einem Link zum Zurücksetzen Ihres Passworts.",
+        "title": "Zurücksetzen erfolgreich"
+      }
+    },
     "login": "Login",
     "passwordInputAriaLabel": "Passworteingabe",
+    "resetPassword": "Passwort zurücksetzen",
     "signInForm": {
       "email": {
         "label": "Email"

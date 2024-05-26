@@ -32,6 +32,10 @@
     "metadata": {
       "title": "Tippspiel | Forgot Passowrd",
       "description": "Reset password page"
+    },
+    "passwordForm": {
+      "cardTitle": "Reset password",
+      "cardDescription": "Enter your email address and we will send you a link to reset your password."
     }
   },
   "common": {
@@ -94,9 +98,29 @@
         "description": "An error occurred while signing up. Please try again."
       }
     },
+    "forgotPasswordForm": {
+      "email": {
+        "label": "Email"
+      },
+      "formSchemaMessages": {
+        "email": {
+          "required": "Email address is required.",
+          "validated": "Invalid email address."
+        }
+      },
+      "resetSuccessToast": {
+        "title": "Reset successful",
+        "description": "Check your email for a link to reset your password."
+      },
+      "resetFailedAlert": {
+        "title": "Reset failed",
+        "description": "An error occurred while resetting the password. Please try again."
+      }
+    },
     "signup": "Sign up",
     "login": "Login",
     "submit": "Submit",
+    "resetPassword": "Reset password",
     "passwordInputAriaLabel": "Password input"
   }
 }

@@ -3,6 +3,10 @@
     "metadata": {
       "description": "Page de réinitialisation du mot de passe",
       "title": "Jeu de tippsiel | Mot de passe oublié"
+    },
+    "passwordForm": {
+      "cardDescription": "Entrez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre mot de passe.",
+      "cardTitle": "Réinitialiser le mot de passe"
     }
   },
   "Home": {
@@ -35,8 +39,28 @@
     "signinRedirect": "Vous avez déjà un compte?"
   },
   "common": {
+    "forgotPasswordForm": {
+      "email": {
+        "label": "E-mail"
+      },
+      "formSchemaMessages": {
+        "email": {
+          "required": "Adresse e-mail est nécessaire.",
+          "validated": "Adresse e-mail invalide."
+        }
+      },
+      "resetFailedAlert": {
+        "description": "Une erreur s'est produite lors de la réinitialisation du mot de passe. \nVeuillez réessayer.",
+        "title": "Échec de la réinitialisation"
+      },
+      "resetSuccessToast": {
+        "description": "Vérifiez votre courrier électronique pour trouver un lien permettant de réinitialiser votre mot de passe.",
+        "title": "Réinitialisation réussie"
+      }
+    },
     "login": "Se connecter",
     "passwordInputAriaLabel": "Saisie du mot de passe",
+    "resetPassword": "Réinitialiser le mot de passe",
     "signInForm": {
       "email": {
         "label": "E-mail"
