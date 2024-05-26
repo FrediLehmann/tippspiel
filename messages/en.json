@@ -40,6 +40,16 @@
     "signinRedirect": "Remembered your password?",
     "signin": "Sign in."
   },
+  "ResetPassword": {
+    "metadata": {
+      "title": "Tippspiel | Reset Passowrd",
+      "description": "Reset password"
+    },
+    "resetForm": {
+      "cardTitle": "Reset password",
+      "cardDescription": "Set your new password."
+    }
+  },
   "common": {
     "signInForm": {
       "email": {
@@ -122,6 +132,7 @@
     "headerNav": {
       "login": "Login"
     },
+    "resetPasswordForm": {},
     "signup": "Sign up",
     "login": "Login",
     "submit": "Submit",

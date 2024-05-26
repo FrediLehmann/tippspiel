@@ -30,6 +30,16 @@
       "separator": "oder hier anmelden"
     }
   },
+  "ResetPassword": {
+    "metadata": {
+      "description": "Passwort zurücksetzen",
+      "title": "Tippspiel | Passwort zurücksetzen"
+    },
+    "resetForm": {
+      "cardDescription": "Legen Sie Ihr neues Passwort fest.",
+      "cardTitle": "Passwort zurücksetzen"
+    }
+  },
   "Signup": {
     "metadata": {
       "description": "Registerieren Sie sich für das Tippspiel",

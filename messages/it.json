@@ -30,6 +30,16 @@
       "separator": "o continuare con"
     }
   },
+  "ResetPassword": {
+    "metadata": {
+      "description": "Resetta la password",
+      "title": "Tipspiel | \nReimposta password"
+    },
+    "resetForm": {
+      "cardDescription": "Imposta la tua nuova password.",
+      "cardTitle": "Resetta la password"
+    }
+  },
   "Signup": {
     "metadata": {
       "description": "Pagina di registrazione",

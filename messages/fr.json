@@ -30,6 +30,16 @@
       "separator": "ou continuez avec"
     }
   },
+  "ResetPassword": {
+    "metadata": {
+      "description": "Réinitialiser le mot de passe",
+      "title": "Jeu de tippsiel | \nRéinitialiser le mot de passe"
+    },
+    "resetForm": {
+      "cardDescription": "Définissez votre nouveau mot de passe.",
+      "cardTitle": "Réinitialiser le mot de passe"
+    }
+  },
   "Signup": {
     "metadata": {
       "description": "Page d'inscription",
