@@ -2,7 +2,7 @@
   "ForgotPassword": {
     "metadata": {
       "description": "Pagina Reimposta password",
-      "pageTitle": "Tipspiel | \nPassword dimenticata"
+      "title": "Tipspiel | Password dimenticata"
     }
   },
   "Home": {
@@ -88,7 +88,7 @@
         "label": "conferma password"
       },
       "signupFailAlert": {
-        "description": "Si è verificato un errore durante la registrazione. \nPer favore riprova.",
+        "description": "Si è verificato un errore durante la registrazione. Per favore riprova.",
         "title": "Accesso fallito"
       },
       "signupSuccessToast": {

@@ -2,7 +2,7 @@
   "ForgotPassword": {
     "metadata": {
       "description": "Page de réinitialisation du mot de passe",
-      "pageTitle": "Jeu de tippsiel | \nMot de passe oublié"
+      "title": "Jeu de tippsiel | Mot de passe oublié"
     }
   },
   "Home": {
@@ -88,7 +88,7 @@
         "label": "Confirmation mot de passe"
       },
       "signupFailAlert": {
-        "description": "Une erreur s'est produite lors de l'inscription. \nVeuillez réessayer.",
+        "description": "Une erreur s'est produite lors de l'inscription. Veuillez réessayer.",
         "title": "Échec de l'inscription"
       },
       "signupSuccessToast": {

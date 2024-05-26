@@ -30,7 +30,7 @@
   },
   "ForgotPassword": {
     "metadata": {
-      "pageTitle": "Tippspiel | Forgot Passowrd",
+      "title": "Tippspiel | Forgot Passowrd",
       "description": "Reset password page"
     }
   },
