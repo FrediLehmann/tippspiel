@@ -47,7 +47,11 @@ export default function ForgotPasswordForm() {
     startTransition(() => {
       async function startReset() {
         try {
-          const result = await resetPassword(values, locale);
+          const result = await resetPassword(
+            values,
+            locale,
+            window.location.host,
+          );
           if (!result.success) {
             throw new Error("Could not sign up");
           }

@@ -6,7 +6,11 @@ import { createServerClient } from "@/lib/supabase/createServerClient";
 
 import { getFormSchema } from "./getFormSchema";
 
-export async function resetPassword(userData: unknown, locale: string) {
+export async function resetPassword(
+  userData: unknown,
+  locale: string,
+  host: string,
+) {
   "use server";
 
   try {
@@ -18,7 +22,9 @@ export async function resetPassword(userData: unknown, locale: string) {
 
     const supabase = createServerClient();
 
-    const { error } = await supabase.auth.resetPasswordForEmail(email);
+    const { error } = await supabase.auth.resetPasswordForEmail(email, {
+      redirectTo: `${host}/${locale}/reset-password`,
+    });
 
     if (error) throw error;
 
