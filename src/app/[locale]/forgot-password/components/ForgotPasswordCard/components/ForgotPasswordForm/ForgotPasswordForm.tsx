@@ -5,7 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { AlertCircleIcon, Loader2Icon, LogInIcon } from "lucide-react";
+import { AlertCircleIcon, Loader2Icon, SendIcon } from "lucide-react";
 
 import {
   Alert,
@@ -93,7 +93,7 @@ export default function ForgotPasswordForm() {
         />
         <Button type="submit" className="w-full mt-7" disabled={isPending}>
           {!isPending ? (
-            <LogInIcon className="mr-2 h-5 w-5" />
+            <SendIcon className="mr-2 h-5 w-5" />
           ) : (
             <Loader2Icon className="mr-2 h-5 w-5 animate-spin" />
           )}

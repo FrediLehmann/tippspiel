@@ -76,6 +76,30 @@
     "login": "Login",
     "passwordInputAriaLabel": "Inserimento della password",
     "resetPassword": "Resetta la password",
+    "resetPasswordForm": {
+      "formSchemaMessages": {
+        "password": {
+          "maxLength": "E 'richiesta la password",
+          "minLength": "La password deve essere lunga almeno 8 caratteri",
+          "pattern": "La password deve contenere almeno un numero, una lettera maiuscola, una lettera minuscola e un carattere speciale",
+          "required": "La password può contenere fino a 100 caratteri"
+        },
+        "passwordConfirmation": {
+          "match": "le passwords non corrispondono"
+        }
+      },
+      "password": {
+        "label": "Parola d'ordine"
+      },
+      "passwordConfirmation": {
+        "label": "conferma password"
+      },
+      "signupFailAlert": {
+        "description": "Si è verificato un errore durante la reimpostazione della password. Per favore riprova.",
+        "title": "Reimpostazione non riuscita"
+      }
+    },
+    "saveNewPassword": "Salva la nuova password",
     "signInForm": {
       "email": {
         "label": "E-mail"

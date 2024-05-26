@@ -101,9 +101,9 @@ export default function SignInForm() {
         </div>
         <Button type="submit" className="w-full mt-7" disabled={isPending}>
           {!isPending ? (
-            <LogInIcon className="mr-2 h-4 w-4" />
+            <LogInIcon className="mr-2 h-5 w-5" />
           ) : (
-            <Loader2Icon className="mr-2 h-4 w-4 animate-spin" />
+            <Loader2Icon className="mr-2 h-5 w-5 animate-spin" />
           )}
           {t("common.login")}
         </Button>

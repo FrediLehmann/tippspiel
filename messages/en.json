@@ -132,11 +132,34 @@
     "headerNav": {
       "login": "Login"
     },
-    "resetPasswordForm": {},
+    "resetPasswordForm": {
+      "formSchemaMessages": {
+        "password": {
+          "maxLength": "Password is required",
+          "minLength": "The password must be at least 8 characters long",
+          "pattern": "The password must contain at least one number, one uppercase letter, one lowercase letter, and one special character",
+          "required": "The password can be up to 100 characters long"
+        },
+        "passwordConfirmation": {
+          "match": "Passwords do not match"
+        }
+      },
+      "password": {
+        "label": "Password"
+      },
+      "passwordConfirmation": {
+        "label": "Password confirmation"
+      },
+      "signupFailAlert": {
+        "title": "Reset failed",
+        "description": "An error occurred while resetting the password. Please try again."
+      }
+    },
     "signup": "Sign up",
     "login": "Login",
     "submit": "Submit",
     "resetPassword": "Reset password",
+    "saveNewPassword": "Save new password",
     "passwordInputAriaLabel": "Password input"
   }
 }
