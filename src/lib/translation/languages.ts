@@ -19,7 +19,7 @@ export const languages: {
   it: {
     name: "Italian",
     nativeName: "Italiano",
-    code: "if",
+    code: "it",
   },
 };
 
