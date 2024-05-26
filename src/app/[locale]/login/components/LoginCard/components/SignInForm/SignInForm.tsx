@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { useRouter } from "next/navigation";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -21,7 +20,7 @@ import {
   FormMessage,
   Input,
 } from "@/components/ui";
-import { Link } from "@/lib/translation";
+import { Link, useRouter } from "@/lib/translation";
 import { PasswordInput } from "@/components";
 
 import { getFormSchema } from "./getFormSchema";

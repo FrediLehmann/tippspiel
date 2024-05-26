@@ -1,10 +1,10 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { LogOutIcon } from "lucide-react";
 
 import { Button } from "@/components/ui";
 import { createBrowserClient } from "@/lib/supabase/createBrowserClient";
+import { useRouter } from "@/lib/translation";
 
 export default function SignoutButton() {
   const supabase = createBrowserClient();

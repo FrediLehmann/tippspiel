@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
@@ -23,6 +22,7 @@ import {
   useToast,
 } from "@/components/ui";
 import { PasswordInput } from "@/components";
+import { useRouter } from "@/lib/translation";
 
 import { getFormSchema } from "./getFormSchema";
 import { signUp } from "./signUp";
