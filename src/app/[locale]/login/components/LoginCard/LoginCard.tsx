@@ -31,6 +31,15 @@ export default function LoginCard() {
     });
   }
 
+  async function signInWithFacebook() {
+    await supabase.auth.signInWithOAuth({
+      provider: "facebook",
+      options: {
+        redirectTo: `${window.location.origin}/auth/callback`,
+      },
+    });
+  }
+
   return (
     <Card>
       <CardHeader>
@@ -57,7 +66,7 @@ export default function LoginCard() {
             <GoogleIcon />
             <span className="ml-2">Google</span>
           </Button>
-          <Button variant="outline">
+          <Button variant="outline" onClick={signInWithFacebook}>
             <FacebookIcon />
             <span className="ml-2">Facebook</span>
           </Button>
