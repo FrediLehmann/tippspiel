@@ -24,7 +24,10 @@ export default function Login({
   const redirectUrl = searchParams?.redirect;
 
   return (
-    <main className="max-w-md mx-auto px-2 pb-6 mt-12 md:mt-24">
+    <main className="max-w-md mx-auto px-2 pb-6 mt-8 md:mt-24">
+      <h1 className="text-xl md:text-3xl font-bold mb-8 md:mb-12 text-center">
+        Tippspiel
+      </h1>
       <LoginCard />
     </main>
   );

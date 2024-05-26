@@ -77,7 +77,7 @@ export default function SignUpForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)}>
-        <div className="space-y-5">
+        <div className="space-y-3 md:space-y-5">
           <FormField
             control={form.control}
             name="email"
