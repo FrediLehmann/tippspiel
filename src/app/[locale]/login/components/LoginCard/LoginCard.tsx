@@ -13,11 +13,23 @@ import {
 } from "@/components/ui";
 import { FacebookIcon, GoogleIcon } from "@/components/Icons";
 import { Link } from "@/lib/translation";
+import { createBrowserClient } from "@/lib/supabase/createBrowserClient";
 
 import { SignInForm } from "./components";
 
 export default function LoginCard() {
   const t = useTranslations();
+
+  const supabase = createBrowserClient();
+
+  async function signInWithGoogle() {
+    await supabase.auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo: `${window.location.origin}/auth/callback`,
+      },
+    });
+  }
 
   return (
     <Card>
@@ -41,7 +53,7 @@ export default function LoginCard() {
           <Separator className="shrink" />
         </div>
         <div className="flex flex-col space-y-2 md:space-y-3">
-          <Button variant="outline">
+          <Button variant="outline" onClick={signInWithGoogle}>
             <GoogleIcon />
             <span className="ml-2">Google</span>
           </Button>
