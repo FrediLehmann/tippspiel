@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 
 import { ProvideMessages } from "@/components";
-import { createServerClient } from "@/lib/supabase";
+import { createServerClient } from "@/lib/supabase/createServerClient";
 
 export default async function LoginLayout({
   children,

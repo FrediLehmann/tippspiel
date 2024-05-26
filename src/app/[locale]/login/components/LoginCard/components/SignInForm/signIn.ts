@@ -2,7 +2,7 @@
 
 import { getTranslations } from "next-intl/server";
 
-import { createServerClient } from "@/lib/supabase";
+import { createServerClient } from "@/lib/supabase/createServerClient";
 
 import { getFormSchema } from "./getFormSchema";
 
