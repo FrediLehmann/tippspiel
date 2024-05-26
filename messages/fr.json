@@ -7,7 +7,9 @@
     "passwordForm": {
       "cardDescription": "Entrez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre mot de passe.",
       "cardTitle": "Réinitialiser le mot de passe"
-    }
+    },
+    "signin": "Se connecter.",
+    "signinRedirect": "Vous vous souvenez de votre mot de passe?"
   },
   "Home": {
     "metadata": {
@@ -50,7 +52,7 @@
         }
       },
       "resetFailedAlert": {
-        "description": "Une erreur s'est produite lors de la réinitialisation du mot de passe. \nVeuillez réessayer.",
+        "description": "Une erreur s'est produite lors de la réinitialisation du mot de passe. Veuillez réessayer.",
         "title": "Échec de la réinitialisation"
       },
       "resetSuccessToast": {

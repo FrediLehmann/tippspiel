@@ -1,13 +1,15 @@
 {
   "ForgotPassword": {
     "metadata": {
-      "description": "Seite „Passwort zurücksetzen“.",
+      "description": "Passwort zurücksetzen",
       "title": "Tippspiel | Passwort vergessen"
     },
     "passwordForm": {
       "cardDescription": "Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen einen Link zum Zurücksetzen Ihres Passworts.",
       "cardTitle": "Passwort zurücksetzen"
-    }
+    },
+    "signin": "Anmelden.",
+    "signinRedirect": "Konnten Sie sich an Ihr passwort erinnern?"
   },
   "Home": {
     "metadata": {
@@ -22,7 +24,7 @@
     },
     "pageDescription": "Melden Sie sich an, um auf das Tippspiel zuzugreifen und daran teilzunehmen",
     "pageTitle": "Anmeldung",
-    "signup": "Registrieren sie sich.",
+    "signup": "Registrieren Sie sich.",
     "signupRedirect": "Sie haben noch kein Konto?",
     "sozialLogin": {
       "separator": "oder hier anmelden"
@@ -50,7 +52,7 @@
         }
       },
       "resetFailedAlert": {
-        "description": "Beim Zurücksetzen des Passworts ist ein Fehler aufgetreten. \nBitte versuche es erneut.",
+        "description": "Beim Zurücksetzen des Passworts ist ein Fehler aufgetreten. Bitte versuche es erneut.",
         "title": "Zurücksetzen fehlgeschlagen"
       },
       "resetSuccessToast": {

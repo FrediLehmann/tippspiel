@@ -36,7 +36,9 @@
     "passwordForm": {
       "cardTitle": "Reset password",
       "cardDescription": "Enter your email address and we will send you a link to reset your password."
-    }
+    },
+    "signinRedirect": "Remembered your password?",
+    "signin": "Sign in."
   },
   "common": {
     "signInForm": {

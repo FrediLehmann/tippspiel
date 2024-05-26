@@ -7,7 +7,9 @@
     "passwordForm": {
       "cardDescription": "Inserisci il tuo indirizzo email e ti invieremo un collegamento per reimpostare la password.",
       "cardTitle": "Resetta la password"
-    }
+    },
+    "signin": "Registrazione.",
+    "signinRedirect": "Hai ricordato la password?"
   },
   "Home": {
     "metadata": {
@@ -50,7 +52,7 @@
         }
       },
       "resetFailedAlert": {
-        "description": "Si è verificato un errore durante la reimpostazione della password. \nPer favore riprova.",
+        "description": "Si è verificato un errore durante la reimpostazione della password. Per favore riprova.",
         "title": "Reimpostazione non riuscita"
       },
       "resetSuccessToast": {
