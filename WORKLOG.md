@@ -8,3 +8,4 @@
 | 2024-05-26 | 1     | Added password reset functionality                |
 | 2024-05-26 | 2     | Add sozial logins                                 |
 | 2024-05-26 | 1     | Add header and language switch                    |
+| 2024-05-27 | 2     | Create error page and check signup                |
