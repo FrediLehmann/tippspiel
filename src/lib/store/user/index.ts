@@ -3,14 +3,14 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 export type User = {
   id: string;
   email: string;
-  signedId: boolean;
+  signedIn: boolean;
   communicationLanguage: string;
 };
 
 const initialState: User = {
   id: "",
   email: "",
-  signedId: false,
+  signedIn: false,
   communicationLanguage: "",
 };
 
@@ -22,7 +22,7 @@ const userSlice = createSlice({
       return action.payload;
     },
     setSignedIn: (state, action: PayloadAction<boolean>) => {
-      state.signedId = action.payload;
+      state.signedIn = action.payload;
     },
   },
 });

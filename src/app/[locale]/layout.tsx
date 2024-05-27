@@ -28,14 +28,14 @@ export default async function LocaleLayout({
   let user = {
     id: "",
     email: "",
-    signedId: false,
+    signedIn: false,
     communicationLanguage: "en",
   };
   if (data) {
     user = {
       id: data.user?.id || "",
       email: data.user?.email || "",
-      signedId: true,
+      signedIn: true,
       communicationLanguage: data.user?.user_metadata.communicationLanguage,
     };
   }

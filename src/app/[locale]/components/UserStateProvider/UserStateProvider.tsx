@@ -20,7 +20,7 @@ export default function UserStoreProvider({
       setUser({
         id: user.id,
         email: user.email,
-        signedId: user.signedId,
+        signedIn: user.signedIn,
         communicationLanguage: user.communicationLanguage,
       }),
     );
