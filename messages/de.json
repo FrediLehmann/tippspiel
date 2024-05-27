@@ -83,6 +83,7 @@
       "login": "Anmeldung"
     },
     "login": "Login",
+    "logout": "Ausloggen",
     "passwordInputAriaLabel": "Passworteingabe",
     "resetPassword": "Passwort zurücksetzen",
     "resetPasswordForm": {

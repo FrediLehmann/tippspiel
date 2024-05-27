@@ -1,7 +1,6 @@
 import { createServerClient } from "@/lib/supabase/createServerClient";
 import { redirect } from "@/lib/translation";
-
-import { SignoutButton } from "./components";
+import { SignoutButton } from "@/components";
 
 export const dynamic = "force-dynamic";
 

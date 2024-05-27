@@ -6,8 +6,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 import { ProvideMessages } from "@/components";
 import { StoreProvider } from "@/lib/store";
+import { createServerClient } from "@/lib/supabase/createServerClient";
 
-import { Header } from "./components";
+import { Header, UserStateProvider } from "./components";
 
 const fontSans = Inter({
   subsets: ["latin"],
@@ -21,6 +22,24 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  const supabase = createServerClient();
+  const { data } = await supabase.auth.getUser();
+
+  let user = {
+    id: "",
+    email: "",
+    signedId: false,
+    communicationLanguage: "en",
+  };
+  if (data) {
+    user = {
+      id: data.user?.id || "",
+      email: data.user?.email || "",
+      signedId: true,
+      communicationLanguage: data.user?.user_metadata.communicationLanguage,
+    };
+  }
+
   return (
     <html lang={locale}>
       <body
@@ -28,9 +47,11 @@ export default async function LocaleLayout({
       >
         <ProvideMessages namespaces={["common"]}>
           <StoreProvider>
-            <Header />
-            {children}
-            <Toaster />
+            <UserStateProvider user={user}>
+              <Header />
+              {children}
+              <Toaster />
+            </UserStateProvider>
           </StoreProvider>
         </ProvideMessages>
       </body>

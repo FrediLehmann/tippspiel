@@ -83,6 +83,7 @@
       "login": "Login"
     },
     "login": "Login",
+    "logout": "Disconnettersi",
     "passwordInputAriaLabel": "Inserimento della password",
     "resetPassword": "Resetta la password",
     "resetPasswordForm": {

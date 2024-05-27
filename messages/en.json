@@ -166,6 +166,7 @@
     },
     "signup": "Sign up",
     "login": "Login",
+    "logout": "Logout",
     "submit": "Submit",
     "resetPassword": "Reset password",
     "saveNewPassword": "Save new password",

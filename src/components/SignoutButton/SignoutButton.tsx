@@ -1,12 +1,14 @@
 "use client";
 
 import { LogOutIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 import { Button } from "@/components/ui";
 import { createBrowserClient } from "@/lib/supabase/createBrowserClient";
 import { useRouter } from "@/lib/translation";
 
 export default function SignoutButton() {
+  const t = useTranslations("common");
   const supabase = createBrowserClient();
   const router = useRouter();
 
@@ -16,8 +18,9 @@ export default function SignoutButton() {
   }
 
   return (
-    <Button onClick={signOut}>
-      <LogOutIcon className="h-5 w-5 mr-2" /> Sign out
+    <Button onClick={signOut} variant="ghost">
+      <LogOutIcon className="h-5 w-5 mr-2" />
+      {t("logout")}
     </Button>
   );
 }
