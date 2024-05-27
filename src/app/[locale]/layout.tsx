@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 import { ProvideMessages } from "@/components";
+import { StoreProvider } from "@/lib/store";
 
 import { Header } from "./components";
 
@@ -26,9 +27,11 @@ export default async function LocaleLayout({
         className={cn("bg-background font-sans antialiased", fontSans.variable)}
       >
         <ProvideMessages namespaces={["common"]}>
-          <Header />
-          {children}
-          <Toaster />
+          <StoreProvider>
+            <Header />
+            {children}
+            <Toaster />
+          </StoreProvider>
         </ProvideMessages>
       </body>
     </html>
