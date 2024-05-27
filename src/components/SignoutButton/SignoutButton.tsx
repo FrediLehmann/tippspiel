@@ -18,8 +18,8 @@ export default function SignoutButton() {
   }
 
   return (
-    <Button onClick={signOut} variant="ghost">
-      <LogOutIcon className="h-5 w-5 mr-2" />
+    <Button onClick={signOut} variant="outline">
+      <LogOutIcon className="h-4 w-4 mr-1" />
       {t("logout")}
     </Button>
   );
