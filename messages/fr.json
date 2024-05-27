@@ -1,4 +1,13 @@
 {
+  "Error": {
+    "cardButton": "Retour à la page d'accueil",
+    "cardContent": "Lors du traitement de votre demande, une erreur inattendue s'est produite. Nous avons enregistré l'erreur et nous nous efforcerons de la corriger.",
+    "cardTitle": "Nous avons eu du mal à répondre à votre demande",
+    "metadata": {
+      "description": "Page d'erreur",
+      "title": "Jeu de tippsiel | Erreur"
+    }
+  },
   "ForgotPassword": {
     "metadata": {
       "description": "Page de réinitialisation du mot de passe",

@@ -1,4 +1,13 @@
 {
+  "Error": {
+    "cardButton": "Zurück zur Startseite",
+    "cardContent": "Bei der Bearbeitung Ihrer Anfrage ist ein unerwarteter Fehler aufgetreten. Wir haben den Fehler gespeichert und werden daran arbeiten, ihn zu beheben.",
+    "cardTitle": "Wir hatten Probleme, Ihrer Anfrage nachzukommen",
+    "metadata": {
+      "description": "Fehlerseite",
+      "title": "Tippspiel | Fehler"
+    }
+  },
   "ForgotPassword": {
     "metadata": {
       "description": "Passwort zurücksetzen",

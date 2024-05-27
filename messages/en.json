@@ -50,6 +50,15 @@
       "cardDescription": "Set your new password."
     }
   },
+  "Error": {
+    "metadata": {
+      "title": "Tippspiel | Error",
+      "description": "Error page"
+    },
+    "cardTitle": "We've had trouble fullfiling your request",
+    "cardContent": "While processing your request an unexpected error happened. We've saved the error and will work on fixing it.",
+    "cardButton": "Go back to homepage"
+  },
   "common": {
     "signInForm": {
       "email": {

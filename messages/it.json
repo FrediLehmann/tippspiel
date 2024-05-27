@@ -1,4 +1,13 @@
 {
+  "Error": {
+    "cardButton": "Torna alla homepage",
+    "cardContent": "Durante l'elaborazione della tua richiesta si è verificato un errore imprevisto. Abbiamo salvato l'errore e lavoreremo per risolverlo.",
+    "cardTitle": "Abbiamo avuto problemi a soddisfare la tua richiesta",
+    "metadata": {
+      "description": "Pagina di errore",
+      "title": "Tipspiel | Errore"
+    }
+  },
   "ForgotPassword": {
     "metadata": {
       "description": "Pagina Reimposta password",
