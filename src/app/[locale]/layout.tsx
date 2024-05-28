@@ -31,7 +31,7 @@ export default async function LocaleLayout({
     signedIn: false,
     communicationLanguage: "en",
   };
-  if (data) {
+  if (data && data.user) {
     user = {
       id: data.user?.id || "",
       email: data.user?.email || "",

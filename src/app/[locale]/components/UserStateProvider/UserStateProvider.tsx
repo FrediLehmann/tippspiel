@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { type User, useAppStore } from "@/lib/store";
 import { setUser } from "@/lib/store";
 
-export default function UserStoreProvider({
+export default function UserStateProvider({
   user,
   children,
 }: {
