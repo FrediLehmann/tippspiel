@@ -1,4 +1,10 @@
 {
+  "Cockpit": {
+    "metadata": {
+      "description": "Gli ultimi risultati e le prossime partite",
+      "title": "Tippspiel | Pozzetto"
+    }
+  },
   "Error": {
     "cardButton": "Torna alla homepage",
     "cardContent": "Durante l'elaborazione della tua richiesta si è verificato un errore imprevisto. Abbiamo salvato l'errore e lavoreremo per risolverlo.",

@@ -1,4 +1,10 @@
 {
+  "Cockpit": {
+    "metadata": {
+      "description": "Die neuesten Ergebnisse und bevorstehenden Spiele",
+      "title": "Tippspiel | Cockpit"
+    }
+  },
   "Error": {
     "cardButton": "Zurück zur Startseite",
     "cardContent": "Bei der Bearbeitung Ihrer Anfrage ist ein unerwarteter Fehler aufgetreten. Wir haben den Fehler gespeichert und werden daran arbeiten, ihn zu beheben.",

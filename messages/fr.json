@@ -1,4 +1,10 @@
 {
+  "Cockpit": {
+    "metadata": {
+      "description": "Les derniers résultats et matchs à venir",
+      "title": "Tippspiel | Poste de pilotage"
+    }
+  },
   "Error": {
     "cardButton": "Retour à la page d'accueil",
     "cardContent": "Lors du traitement de votre demande, une erreur inattendue s'est produite. Nous avons enregistré l'erreur et nous nous efforcerons de la corriger.",

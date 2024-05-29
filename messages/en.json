@@ -59,6 +59,12 @@
     "cardContent": "While processing your request an unexpected error happened. We've saved the error and will work on fixing it.",
     "cardButton": "Go back to homepage"
   },
+  "Cockpit": {
+    "metadata": {
+      "title": "Tippspiel | Cockpit",
+      "description": "The latest results and upcoming matches"
+    }
+  },
   "common": {
     "signInForm": {
       "email": {
