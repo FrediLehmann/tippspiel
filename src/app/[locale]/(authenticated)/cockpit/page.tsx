@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
 import {
+  CurrentRank,
   PredictionGameAwards,
   PredictionGameSelect,
   PredictionGameStats,
@@ -27,6 +28,9 @@ export default function Cockpit() {
         <PredictionGameAwards />
       </div>
       <PredictionGameStats />
+      <div className="max-w-72">
+        <CurrentRank />
+      </div>
     </main>
   );
 }
