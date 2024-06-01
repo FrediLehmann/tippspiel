@@ -26,7 +26,7 @@ export default function CurrentRank() {
         <div className="flex items-center border-b justify-between bg-yellow-100 bg-opacity-50">
           <div className="flex gap-2">
             <div className="w-1/4 px-2 py-2">1</div>
-            <div className="w-1/4 px-2 py-2">John</div>
+            <div className="w-1/4 px-2 py-2 text-nowrap">John 🥇</div>
           </div>
           <div className="w-1/4 px-2 py-2">
             <div className="flex max-w-10 justify-center items-center text-center pl-0 p-1 rounded-lg bg-green-200">
@@ -38,7 +38,7 @@ export default function CurrentRank() {
         <div className="flex items-center border-b justify-between bg-gray-100 bg-opacity-50">
           <div className="flex gap-2">
             <div className="w-1/4 px-2 py-2 max-w-8">2</div>
-            <div className="w-1/4 px-2 py-2">Alice</div>
+            <div className="w-1/4 px-2 py-2 text-nowrap">Alice 🥈</div>
           </div>
           <div className="w-1/4 px-2 py-2">
             <div className="flex max-w-10 justify-center items-center text-center pl-0 p-1 rounded-lg bg-red-200">
@@ -48,9 +48,9 @@ export default function CurrentRank() {
           <div className="w-1/4 px-2 py-2">950</div>
         </div>
         <div className="flex items-center border-b justify-between bg-yellow-700 bg-opacity-10">
-          <div className="flex gap-2">
-            <div className="w-1/4 px-2 py-2  max-w-8">3</div>
-            <div className="w-1/4 px-2 py-2">Bob</div>
+          <div className="flex gap-2 w-1/4 ">
+            <div className="px-2 py-2  max-w-8">3</div>
+            <div className="px-2 py-2 text-nowrap">Bob 🥉</div>
           </div>
           <div className="w-1/4 px-2 py-2">
             <div className="flex max-w-10 justify-center items-center text-center pl-0 p-1 rounded-lg bg-neutral-200">

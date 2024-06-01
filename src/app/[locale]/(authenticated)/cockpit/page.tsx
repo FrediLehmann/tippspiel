@@ -29,7 +29,7 @@ export default function Cockpit() {
         <PredictionGameAwards />
       </div>
       <PredictionGameStats />
-      <div className="flex">
+      <div className="flex flex-col md:flex-row justify-stretch gap-8">
         <UpcomingGames />
         <div className="w-full md:w-72">
           <CurrentRank />
