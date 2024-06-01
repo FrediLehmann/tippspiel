@@ -5,6 +5,7 @@ import {
   PredictionGameAwards,
   PredictionGameSelect,
   PredictionGameStats,
+  UpcomingGames,
 } from "./components";
 
 export async function generateMetadata({
@@ -28,8 +29,11 @@ export default function Cockpit() {
         <PredictionGameAwards />
       </div>
       <PredictionGameStats />
-      <div className="max-w-full md:max-w-72">
-        <CurrentRank />
+      <div className="flex">
+        <UpcomingGames />
+        <div className="w-full md:w-72">
+          <CurrentRank />
+        </div>
       </div>
     </main>
   );

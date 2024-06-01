@@ -2,10 +2,18 @@
 
 import { ArrowDownIcon, ArrowUpIcon, MoreVerticalIcon } from "lucide-react";
 
+import { Link } from "@/lib/translation";
+import { Button } from "@/components/ui";
+
 export default function CurrentRank() {
   return (
     <>
-      <div className="text-lg font-semibold mt-6 md:mt-10 mb-4">Rangliste</div>
+      <div className="flex items-center justify-between mt-6 md:mt-10 mb-4">
+        <div className="text-lg font-semibold">Rangliste</div>
+        <Button asChild variant="outline">
+          <Link href="/">Rangliste</Link>
+        </Button>
+      </div>
       <div className="border rounded">
         <div className="flex bg-neutral-100 font-semibold border-b items-center text-neutral-600 justify-between">
           <div className="flex gap-2">
