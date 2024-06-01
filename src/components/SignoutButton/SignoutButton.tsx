@@ -19,7 +19,7 @@ export default function SignoutButton() {
 
   return (
     <Button onClick={signOut} variant="outline">
-      <LogOutIcon className="h-4 w-4 mr-1" />
+      <LogOutIcon className="mr-1 h-4 w-4" />
       {t("logout")}
     </Button>
   );

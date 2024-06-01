@@ -24,7 +24,7 @@ export default function ErrorCard() {
         <p>{t("cardContent")}</p>
         <Button asChild className="w-full">
           <Link href="/">
-            <ArrowLeftIcon className="w-5 h-5 mr-2" />
+            <ArrowLeftIcon className="mr-2 h-5 w-5" />
             {t("cardButton")}
           </Link>
         </Button>

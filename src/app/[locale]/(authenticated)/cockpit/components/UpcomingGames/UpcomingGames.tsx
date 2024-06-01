@@ -6,14 +6,14 @@ import { Link } from "@/lib/translation";
 export default function UpcomingGames() {
   return (
     <div className="grow">
-      <div className="flex items-center justify-between mb-4">
+      <div className="mb-4 flex items-center justify-between">
         <div className="text-lg font-semibold">Aktuelle Spiele</div>
         <Button asChild variant="outline">
           <Link href="/">Alle Spiele</Link>
         </Button>
       </div>
       <div>
-        <div className="flex items-center border border-b-0 rounded rounded-b-none px-5 py-3 justify-between">
+        <div className="flex items-center justify-between rounded rounded-b-none border border-b-0 px-5 py-3">
           <div>
             <div className="text-sm font-semibold text-neutral-500">
               Match Datum
@@ -40,7 +40,7 @@ export default function UpcomingGames() {
             </Button>
           </div>
         </div>
-        <div className="flex items-center border border-b-0 rounded rounded-b-none px-5 py-3 justify-between">
+        <div className="flex items-center justify-between rounded rounded-b-none border border-b-0 px-5 py-3">
           <div>
             <div className="text-sm font-semibold text-neutral-500">
               Match Datum
@@ -67,7 +67,7 @@ export default function UpcomingGames() {
             </Button>
           </div>
         </div>
-        <div className="flex items-center border border-b-0 rounded rounded-b-none px-5 py-3 justify-between bg-neutral-50">
+        <div className="flex items-center justify-between rounded rounded-b-none border border-b-0 bg-neutral-50 px-5 py-3">
           <div>
             <div className="text-sm font-semibold text-neutral-500">
               Match Datum
@@ -95,7 +95,7 @@ export default function UpcomingGames() {
             <div className="font-semibold">150</div>
           </div>
         </div>
-        <div className="flex items-center border rounded rounded-t-none px-5 py-3 justify-between bg-neutral-50">
+        <div className="flex items-center justify-between rounded rounded-t-none border bg-neutral-50 px-5 py-3">
           <div>
             <div className="text-sm font-semibold text-neutral-500">
               Match Datum

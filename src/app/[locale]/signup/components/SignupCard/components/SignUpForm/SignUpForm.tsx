@@ -120,7 +120,7 @@ export default function SignUpForm() {
             )}
           />
         </div>
-        <Button type="submit" className="w-full mt-7" disabled={isPending}>
+        <Button type="submit" className="mt-7 w-full" disabled={isPending}>
           {!isPending ? (
             <LogInIcon className="mr-2 h-5 w-5" />
           ) : (

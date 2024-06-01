@@ -91,7 +91,7 @@ export default function ForgotPasswordForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-full mt-7" disabled={isPending}>
+        <Button type="submit" className="mt-7 w-full" disabled={isPending}>
           {!isPending ? (
             <SendIcon className="mr-2 h-5 w-5" />
           ) : (

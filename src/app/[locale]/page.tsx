@@ -14,5 +14,5 @@ export async function generateMetadata({
 }
 
 export default function Home() {
-  return <main className="container max-w-7xl mx-auto">Home</main>;
+  return <main className="container mx-auto max-w-7xl">Home</main>;
 }

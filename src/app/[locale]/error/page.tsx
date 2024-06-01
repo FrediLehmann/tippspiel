@@ -23,8 +23,8 @@ export default async function Home({
 }) {
   return (
     <ProvideMessages namespaces={["common", "Error"]}>
-      <main className="max-w-md mx-auto px-2 pb-6 mt-8 md:mt-24">
-        <h1 className="text-xl md:text-3xl font-bold mb-8 md:mb-12 text-center">
+      <main className="mx-auto mt-8 max-w-md px-2 pb-6 md:mt-24">
+        <h1 className="mb-8 text-center text-xl font-bold md:mb-12 md:text-3xl">
           Tippspiel
         </h1>
         <ErrorCard />

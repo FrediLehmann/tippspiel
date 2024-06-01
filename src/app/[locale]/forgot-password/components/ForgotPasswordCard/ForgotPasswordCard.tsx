@@ -27,7 +27,7 @@ export default function ForgotPasswordCard() {
       </CardHeader>
       <CardContent>
         <ForgotPasswordForm />
-        <div className="mt-3 md:mt-4 items-center text-center text-sm text-neutral-600">
+        <div className="mt-3 items-center text-center text-sm text-neutral-600 md:mt-4">
           <span>{t("ForgotPassword.signinRedirect")}</span>
           <Button asChild variant="link" className="px-1">
             <Link href="/login">{t("ForgotPassword.signin")}</Link>

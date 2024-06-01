@@ -26,13 +26,13 @@ export async function generateMetadata({
 export default function Cockpit() {
   return (
     <ProvideMessages namespaces={["common", "Cockpit"]}>
-      <main className="container max-w-7xl mx-auto mt-6 md:mt-10 mb-4">
-        <div className="mb-4 box md:flex justify-between space-y-2 md:space-y-0">
+      <main className="container mx-auto mb-4 mt-6 max-w-7xl md:mt-10">
+        <div className="box mb-4 justify-between space-y-2 md:flex md:space-y-0">
           <PredictionGameSelect />
           <PredictionGameAwards />
         </div>
         <PredictionGameStats />
-        <div className="flex flex-col md:flex-row justify-stretch gap-8 mt-6 md:mt-10">
+        <div className="mt-6 flex flex-col justify-stretch gap-8 md:mt-10 md:flex-row">
           <UpcomingGames />
           <CurrentRank />
         </div>

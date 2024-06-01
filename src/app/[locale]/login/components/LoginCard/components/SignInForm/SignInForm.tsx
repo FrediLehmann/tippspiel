@@ -83,9 +83,9 @@ export default function SignInForm() {
             name="password"
             render={({ field }) => (
               <FormItem>
-                <div className="flex justify-between items-center">
+                <div className="flex items-center justify-between">
                   <FormLabel>{t("common.signInForm.password.label")}</FormLabel>
-                  <Button asChild variant="link" className="py-0 h-6">
+                  <Button asChild variant="link" className="h-6 py-0">
                     <Link href="/forgot-password">
                       {t("common.signInForm.password.forgot")}
                     </Link>
@@ -99,7 +99,7 @@ export default function SignInForm() {
             )}
           />
         </div>
-        <Button type="submit" className="w-full mt-7" disabled={isPending}>
+        <Button type="submit" className="mt-7 w-full" disabled={isPending}>
           {!isPending ? (
             <LogInIcon className="mr-2 h-5 w-5" />
           ) : (

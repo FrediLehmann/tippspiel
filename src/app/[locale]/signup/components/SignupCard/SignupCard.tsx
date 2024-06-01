@@ -25,7 +25,7 @@ export default function SignupCard() {
       </CardHeader>
       <CardContent>
         <SignUpForm />
-        <div className="mt-4 md:mt-6 items-center text-center text-sm text-neutral-600">
+        <div className="mt-4 items-center text-center text-sm text-neutral-600 md:mt-6">
           <span>{t("Signup.signinRedirect")}</span>
           <Button asChild variant="link" className="px-1">
             <Link href="/login">{t("Signup.signin")}</Link>

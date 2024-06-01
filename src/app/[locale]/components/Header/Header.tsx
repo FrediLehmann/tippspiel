@@ -16,9 +16,9 @@ export default function Header() {
 
   return (
     <header className="w-full border-b py-2">
-      <div className="flex items-center justify-between container max-w-7xl mx-auto">
+      <div className="container mx-auto flex max-w-7xl items-center justify-between">
         <div>
-          <Link href="/" className="font-bold text-lg">
+          <Link href="/" className="text-lg font-bold">
             Tippspiel
           </Link>
         </div>
