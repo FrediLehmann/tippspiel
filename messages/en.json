@@ -63,6 +63,14 @@
     "metadata": {
       "title": "Tippspiel | Cockpit",
       "description": "The latest results and upcoming matches"
+    },
+    "rewards": "Rewards",
+    "ranklist": {
+      "title": "Ranking overview",
+      "ranking": "Ranking",
+      "name": "Name",
+      "points": "Points",
+      "change": "Change"
     }
   },
   "common": {

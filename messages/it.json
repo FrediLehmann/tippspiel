@@ -3,7 +3,15 @@
     "metadata": {
       "description": "Gli ultimi risultati e le prossime partite",
       "title": "Tippspiel | Pozzetto"
-    }
+    },
+    "ranklist": {
+      "change": "Modifica",
+      "name": "Nome",
+      "points": "Punti",
+      "ranking": "classifica",
+      "title": "Panoramica della classifica"
+    },
+    "rewards": "Premi"
   },
   "Error": {
     "cardButton": "Torna alla homepage",

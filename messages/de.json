@@ -3,7 +3,15 @@
     "metadata": {
       "description": "Die neuesten Ergebnisse und bevorstehenden Spiele",
       "title": "Tippspiel | Cockpit"
-    }
+    },
+    "ranklist": {
+      "change": "Änderung",
+      "name": "Name",
+      "points": "Punkte",
+      "ranking": "Rangfolge",
+      "title": "Ranking-Übersicht"
+    },
+    "rewards": "Belohnung"
   },
   "Error": {
     "cardButton": "Zurück zur Startseite",

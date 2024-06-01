@@ -3,7 +3,15 @@
     "metadata": {
       "description": "Les derniers résultats et matchs à venir",
       "title": "Tippspiel | Poste de pilotage"
-    }
+    },
+    "ranklist": {
+      "change": "Changement",
+      "name": "Nom",
+      "points": "Points",
+      "ranking": "Classement",
+      "title": "Aperçu du classement"
+    },
+    "rewards": "Récompenses"
   },
   "Error": {
     "cardButton": "Retour à la page d'accueil",

@@ -5,7 +5,7 @@ import { Link } from "@/lib/translation";
 
 export default function UpcomingGames() {
   return (
-    <div className="grow mt-6 md:mt-10">
+    <div className="grow">
       <div className="flex items-center justify-between mb-4">
         <div className="text-lg font-semibold">Aktuelle Spiele</div>
         <Button asChild variant="outline">
