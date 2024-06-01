@@ -22,13 +22,13 @@ export async function generateMetadata({
 
 export default function Cockpit() {
   return (
-    <main className="container max-w-7xl mx-auto mt-6 md:mt-10">
+    <main className="container max-w-7xl mx-auto mt-6 md:mt-10 mb-4">
       <div className="mb-4 box md:flex justify-between space-y-2 md:space-y-0">
         <PredictionGameSelect />
         <PredictionGameAwards />
       </div>
       <PredictionGameStats />
-      <div className="max-w-72">
+      <div className="max-w-full md:max-w-72">
         <CurrentRank />
       </div>
     </main>
