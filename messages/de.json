@@ -11,7 +11,14 @@
       "ranking": "Rangfolge",
       "title": "Ranking-Übersicht"
     },
-    "rewards": "Belohnung"
+    "rewards": "Belohnung",
+    "stats": {
+      "accuracy": "Genauigkeit",
+      "difference": "Unterschied",
+      "points": "Punkte",
+      "rank": "Rang",
+      "rankNumber": "{rank, selectordinal, other {#.}}"
+    }
   },
   "Error": {
     "cardButton": "Zurück zur Startseite",

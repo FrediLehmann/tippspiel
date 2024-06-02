@@ -71,6 +71,13 @@
       "name": "Name",
       "points": "Points",
       "change": "Change"
+    },
+    "stats": {
+      "rank": "Rank",
+      "rankNumber": "{rank, selectordinal, one {#st} two {#nd} few {#rd} other {#th}}",
+      "difference": "Difference",
+      "accuracy": "Accuracy",
+      "points": "Points"
     }
   },
   "common": {

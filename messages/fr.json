@@ -11,7 +11,14 @@
       "ranking": "Classement",
       "title": "Aperçu du classement"
     },
-    "rewards": "Récompenses"
+    "rewards": "Récompenses",
+    "stats": {
+      "accuracy": "Précision",
+      "difference": "Différence",
+      "points": "Points",
+      "rank": "Rang",
+      "rankNumber": "{rank, selectordinal, one {#er} other {#e}}"
+    }
   },
   "Error": {
     "cardButton": "Retour à la page d'accueil",

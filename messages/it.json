@@ -11,7 +11,14 @@
       "ranking": "classifica",
       "title": "Panoramica della classifica"
     },
-    "rewards": "Premi"
+    "rewards": "Premi",
+    "stats": {
+      "accuracy": "Precisione",
+      "difference": "Differenza",
+      "points": "Punti",
+      "rank": "Rango",
+      "rankNumber": "{rank, selectordinal, other {#°}}"
+    }
   },
   "Error": {
     "cardButton": "Torna alla homepage",
