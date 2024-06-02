@@ -20,6 +20,7 @@ export {
 } from "./form";
 export { Input } from "./input";
 export { Label } from "./label";
+export { Popover, PopoverContent, PopoverTrigger } from "./popover";
 export { ScrollArea, ScrollBar } from "./scroll-area";
 export {
   Select,

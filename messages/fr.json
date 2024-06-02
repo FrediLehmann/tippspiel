@@ -6,6 +6,7 @@
         "date": "Temps",
         "editTip": "Modifier le conseil",
         "points": "Points",
+        "pointsInfo": "Vous obtenez 1 point pour chaque prédiction de but correcte, vous obtenez également un point pour la différence de buts correcte, si vous avez deviné correctement le vainqueur, cela vous donnera également un point et vous obtiendrez un point supplémentaire si vous avez deviné correctement le résultat.",
         "result": "Résultat",
         "teams": "Équipes",
         "tip": "Conseil"

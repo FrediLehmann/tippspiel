@@ -6,6 +6,7 @@
         "date": "Tempo",
         "editTip": "Modifica suggerimento",
         "points": "Punti",
+        "pointsInfo": "Ottieni 1 punto per ogni pronostico goal corretto, ottieni anche un punto per la differenza reti corretta, se hai indovinato correttamente il vincitore anche questo ti darà un punto e ottieni un punto extra se hai indovinato correttamente il risultato",
         "result": "Risultato",
         "teams": "Squadre",
         "tip": "Mancia"

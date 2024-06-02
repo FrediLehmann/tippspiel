@@ -2,9 +2,14 @@
 
 import { useTranslations } from "next-intl";
 import { format, isPast } from "date-fns";
-import { EditIcon } from "lucide-react";
+import { EditIcon, InfoIcon } from "lucide-react";
 
-import { Button } from "@/components/ui";
+import {
+  Button,
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui";
 import { cn } from "@/lib/utils";
 
 type Teams = [string, string];
@@ -65,7 +70,17 @@ export default function Game({ date, teams, result, tip, points }: Game) {
       </div>
       {points !== undefined ? (
         <div className="col-span-2">
-          <div className="text-sm text-neutral-500">{t("points")}</div>
+          <div className="flex items-start text-sm text-neutral-500">
+            {t("points")}
+            <Popover>
+              <PopoverTrigger asChild>
+                <Button variant="link" className="h-4 items-start px-2 py-0">
+                  <InfoIcon className="h-4 w-4" />
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent>{t("pointsInfo")}</PopoverContent>
+            </Popover>
+          </div>
           <div>{points ?? "-"}</div>
         </div>
       ) : (

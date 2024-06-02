@@ -88,7 +88,8 @@
         "tip": "Tip",
         "result": "Result",
         "points": "Points",
-        "editTip": "Edit tip"
+        "editTip": "Edit tip",
+        "pointsInfo": "You get 1 point for each correct goal prediction, you also get a point for the correct goal difference, if you guessed the winner correctly this will also give a point and you get an extrapoint if you guessed the result correctly"
       }
     }
   },

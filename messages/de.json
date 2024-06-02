@@ -6,6 +6,7 @@
         "date": "Zeit",
         "editTip": "Tipp bearbeiten",
         "points": "Punkte",
+        "pointsInfo": "Sie erhalten 1 Punkt für jede richtige Torvorhersage, außerdem erhalten Sie einen Punkt für die richtige Tordifferenz. Wenn Sie den Sieger richtig getippt haben, gibt es auch einen Punkt und Sie erhalten einen Extrapunkt, wenn Sie das Ergebnis richtig getippt haben",
         "result": "Ergebnis",
         "teams": "Mannschaften",
         "tip": "Tipp"
