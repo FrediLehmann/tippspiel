@@ -10,7 +10,7 @@ export default function Rank() {
   return (
     <div
       className={cn(
-        "rounded-tl-xl px-8 py-3 text-center md:rounded-l-xl md:py-4",
+        "rounded-tl-xl border-r-2 border-white px-8 py-3 text-center md:rounded-l-xl md:py-4",
         "bg-yellow-500 bg-opacity-20 text-yellow-900",
       )}
     >
