@@ -1,5 +1,17 @@
 {
   "Cockpit": {
+    "games": {
+      "allGames": "Tous les jeux",
+      "game": {
+        "date": "Temps",
+        "editTip": "Modifier le conseil",
+        "points": "Points",
+        "result": "Résultat",
+        "teams": "Équipes",
+        "tip": "Conseil"
+      },
+      "title": "Jeux"
+    },
     "metadata": {
       "description": "Les derniers résultats et matchs à venir",
       "title": "Tippspiel | Poste de pilotage"

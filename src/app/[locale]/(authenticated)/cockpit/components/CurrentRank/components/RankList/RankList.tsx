@@ -30,14 +30,16 @@ export default function RankList() {
   return (
     <div className="rounded border">
       <div className="flex items-center justify-between border-b bg-neutral-100 font-semibold text-neutral-600">
-        <div className="flex w-1/4 gap-4 px-2 py-2">
+        <div className="max-w-1/3 flex gap-4 px-2 py-2">
           <div>#</div>
           <div>{t("Cockpit.ranklist.name")}</div>
         </div>
-        <div className="sr-only w-1/4 px-2 py-2">
+        <div className="max-w-1/4 sr-only px-2 py-2">
           {t("Cockpit.ranklist.change")}
         </div>
-        <div className="w-1/4 px-2 py-2">{t("Cockpit.ranklist.points")}</div>
+        <div className="max-w-1/3 px-2 py-2">
+          {t("Cockpit.ranklist.points")}
+        </div>
       </div>
       <div className="divide-y">
         {leaders.map(({ rank, name, points, change }) => (

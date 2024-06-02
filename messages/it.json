@@ -1,5 +1,17 @@
 {
   "Cockpit": {
+    "games": {
+      "allGames": "Tutti i giochi",
+      "game": {
+        "date": "Tempo",
+        "editTip": "Modifica suggerimento",
+        "points": "Punti",
+        "result": "Risultato",
+        "teams": "Squadre",
+        "tip": "Mancia"
+      },
+      "title": "Giochi"
+    },
     "metadata": {
       "description": "Gli ultimi risultati e le prossime partite",
       "title": "Tippspiel | Pozzetto"
@@ -8,7 +20,7 @@
       "change": "Modifica",
       "name": "Nome",
       "points": "Punti",
-      "ranking": "classifica",
+      "ranking": "Classifica",
       "title": "Panoramica della classifica"
     },
     "rewards": "Premi",

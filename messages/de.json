@@ -1,5 +1,17 @@
 {
   "Cockpit": {
+    "games": {
+      "allGames": "Alle Spiele",
+      "game": {
+        "date": "Zeit",
+        "editTip": "Tipp bearbeiten",
+        "points": "Punkte",
+        "result": "Ergebnis",
+        "teams": "Mannschaften",
+        "tip": "Tipp"
+      },
+      "title": "Spiele"
+    },
     "metadata": {
       "description": "Die neuesten Ergebnisse und bevorstehenden Spiele",
       "title": "Tippspiel | Cockpit"

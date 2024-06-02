@@ -27,7 +27,7 @@ export default function Row({
         highligthed && "animate-pulse bg-blue-200 bg-opacity-50",
       )}
     >
-      <div className="flex w-1/4 gap-4 px-2 py-2">
+      <div className="max-w-1/3 flex gap-4 px-2 py-2">
         <div>{rank}</div>
         <div className="text-nowrap">
           {name}
@@ -36,10 +36,10 @@ export default function Row({
           {rank === 3 && "🥉"}
         </div>
       </div>
-      <div className="w-1/4 px-2 py-2">
+      <div className="max-w-1/4 px-2 py-2">
         <div
           className={cn(
-            "mx-auto flex max-w-10 items-center justify-center rounded-lg p-1 pl-0 text-center",
+            "flex items-center justify-center rounded-lg p-1 pl-0 text-center",
             change > 0 && "bg-green-200 text-green-900",
             change < 0 && "bg-red-200 text-red-900",
             change === 0 && "bg-neutral-200 text-neutral-700",
@@ -50,7 +50,7 @@ export default function Row({
           {Math.abs(change)}
         </div>
       </div>
-      <div className="w-1/4 px-2 py-2">{points}</div>
+      <div className="max-w-1/3 px-2 py-2">{points}</div>
     </div>
   );
 }

@@ -78,6 +78,18 @@
       "difference": "Difference",
       "accuracy": "Accuracy",
       "points": "Points"
+    },
+    "games": {
+      "title": "Games",
+      "allGames": "All games",
+      "game": {
+        "date": "Time",
+        "teams": "Teams",
+        "tip": "Tip",
+        "result": "Result",
+        "points": "Points",
+        "editTip": "Edit tip"
+      }
     }
   },
   "common": {
