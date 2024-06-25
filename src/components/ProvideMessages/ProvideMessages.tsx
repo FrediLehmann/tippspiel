@@ -1,18 +1,18 @@
-import { pick } from "lodash";
-import { NextIntlClientProvider, useMessages } from "next-intl";
+import { pick } from 'lodash';
+import { NextIntlClientProvider, useMessages } from 'next-intl';
 
 export default function ProvideMessages({
-  children,
-  namespaces,
+	children,
+	namespaces
 }: {
-  children: React.ReactNode;
-  namespaces: string[];
+	children: React.ReactNode;
+	namespaces: string[];
 }) {
-  const messages = useMessages();
+	const messages = useMessages();
 
-  return (
-    <NextIntlClientProvider messages={pick(messages, ...namespaces)}>
-      {children}
-    </NextIntlClientProvider>
-  );
+	return (
+		<NextIntlClientProvider messages={pick(messages, ...namespaces)}>
+			{children}
+		</NextIntlClientProvider>
+	);
 }

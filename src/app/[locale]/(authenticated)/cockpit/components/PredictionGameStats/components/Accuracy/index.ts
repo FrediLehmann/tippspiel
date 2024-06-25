@@ -1,1 +1,1 @@
-export { default } from "./Accuracy";
+export { default } from './Accuracy';

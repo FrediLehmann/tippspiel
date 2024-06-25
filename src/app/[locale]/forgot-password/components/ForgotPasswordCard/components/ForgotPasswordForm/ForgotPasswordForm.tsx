@@ -1,116 +1,106 @@
-"use client";
+'use client';
 
-import { useState, useTransition } from "react";
-import { useLocale, useTranslations } from "next-intl";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
-import { AlertCircleIcon, Loader2Icon, SendIcon } from "lucide-react";
+import { zodResolver } from '@hookform/resolvers/zod';
+import { AlertCircleIcon, Loader2Icon, SendIcon } from 'lucide-react';
+import { useLocale, useTranslations } from 'next-intl';
+import { useState, useTransition } from 'react';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
 
 import {
-  Alert,
-  AlertDescription,
-  AlertTitle,
-  Button,
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-  Input,
-  useToast,
-} from "@/components/ui";
+	Alert,
+	AlertDescription,
+	AlertTitle,
+	Button,
+	Form,
+	FormControl,
+	FormField,
+	FormItem,
+	FormLabel,
+	FormMessage,
+	Input,
+	useToast
+} from '@/components/ui';
 
-import { getFormSchema } from "./getFormSchema";
-import { resetPassword } from "./resetPassword";
+import { getFormSchema } from './getFormSchema';
+import { resetPassword } from './resetPassword';
 
 export default function ForgotPasswordForm() {
-  const t = useTranslations();
-  const locale = useLocale();
+	const t = useTranslations();
+	const locale = useLocale();
 
-  const [isPending, startTransition] = useTransition();
-  const [error, setError] = useState(false);
+	const [isPending, startTransition] = useTransition();
+	const [error, setError] = useState(false);
 
-  const { toast } = useToast();
+	const { toast } = useToast();
 
-  const formSchema = getFormSchema(t);
-  type FormSchema = z.infer<typeof formSchema>;
-  const form = useForm<FormSchema>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      email: "",
-    },
-  });
+	const formSchema = getFormSchema(t);
+	type FormSchema = z.infer<typeof formSchema>;
+	const form = useForm<FormSchema>({
+		resolver: zodResolver(formSchema),
+		defaultValues: {
+			email: ''
+		}
+	});
 
-  function onSubmit(values: FormSchema) {
-    startTransition(() => {
-      async function startReset() {
-        try {
-          const result = await resetPassword(
-            values,
-            locale,
-            window.location.host,
-          );
-          if (!result.success) {
-            throw new Error("Could not sign up");
-          }
+	function onSubmit(values: FormSchema) {
+		startTransition(() => {
+			async function startReset() {
+				try {
+					const result = await resetPassword(values, locale, window.location.host);
+					if (!result.success) {
+						throw new Error('Could not sign up');
+					}
 
-          toast({
-            title: t("common.forgotPasswordForm.resetSuccessToast.title"),
-            description: t(
-              "common.forgotPasswordForm.resetSuccessToast.description",
-            ),
-          });
+					toast({
+						title: t('common.forgotPasswordForm.resetSuccessToast.title'),
+						description: t('common.forgotPasswordForm.resetSuccessToast.description')
+					});
 
-          setError(false);
-        } catch (e) {
-          setError(true);
-        }
-      }
+					setError(false);
+				} catch (e) {
+					setError(true);
+				}
+			}
 
-      startReset();
-    });
-  }
+			startReset();
+		});
+	}
 
-  return (
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)}>
-        <FormField
-          control={form.control}
-          name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>
-                {t("common.forgotPasswordForm.email.label")}
-              </FormLabel>
-              <FormControl>
-                <Input {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <Button type="submit" className="mt-7 w-full" disabled={isPending}>
-          {!isPending ? (
-            <SendIcon className="mr-2 h-5 w-5" />
-          ) : (
-            <Loader2Icon className="mr-2 h-5 w-5 animate-spin" />
-          )}
-          {t("common.resetPassword")}
-        </Button>
-        {error && (
-          <Alert variant="destructive" className="mt-4">
-            <AlertCircleIcon className="h-4 w-4" />
-            <AlertTitle>
-              {t("common.forgotPasswordForm.resetFailedAlert.title")}
-            </AlertTitle>
-            <AlertDescription>
-              {t("common.forgotPasswordForm.resetFailedAlert.description")}
-            </AlertDescription>
-          </Alert>
-        )}
-      </form>
-    </Form>
-  );
+	return (
+		<Form {...form}>
+			<form onSubmit={form.handleSubmit(onSubmit)}>
+				<FormField
+					control={form.control}
+					name="email"
+					render={({ field }) => (
+						<FormItem>
+							<FormLabel>{t('common.forgotPasswordForm.email.label')}</FormLabel>
+							<FormControl>
+								<Input {...field} />
+							</FormControl>
+							<FormMessage />
+						</FormItem>
+					)}
+				/>
+				<Button type="submit" className="mt-7 w-full" disabled={isPending}>
+					{!isPending ? (
+						<SendIcon className="mr-2 h-5 w-5" />
+					) : (
+						<Loader2Icon className="mr-2 h-5 w-5 animate-spin" />
+					)}
+					{t('common.resetPassword')}
+				</Button>
+				{error && (
+					<Alert variant="destructive" className="mt-4">
+						<AlertCircleIcon className="h-4 w-4" />
+						<AlertTitle>{t('common.forgotPasswordForm.resetFailedAlert.title')}</AlertTitle>
+						<AlertDescription>
+							{t('common.forgotPasswordForm.resetFailedAlert.description')}
+						</AlertDescription>
+					</Alert>
+				)}
+			</form>
+		</Form>
+	);
 }

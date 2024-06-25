@@ -1,1 +1,1 @@
-export { default } from "./CurrentRank";
+export { default } from './CurrentRank';

@@ -1,42 +1,38 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations } from 'next-intl/server';
 
-import { ProvideMessages } from "@/components";
+import { ProvideMessages } from '@/components';
 
 import {
-  CurrentRank,
-  PredictionGameAwards,
-  PredictionGameSelect,
-  PredictionGameStats,
-  UpcomingGames,
-} from "./components";
+	CurrentRank,
+	PredictionGameAwards,
+	PredictionGameSelect,
+	PredictionGameStats,
+	UpcomingGames
+} from './components';
 
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
-  const t = await getTranslations({ locale, namespace: "Cockpit.metadata" });
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+	const t = await getTranslations({ locale, namespace: 'Cockpit.metadata' });
 
-  return {
-    title: t("title"),
-    description: t("description"),
-  };
+	return {
+		title: t('title'),
+		description: t('description')
+	};
 }
 
 export default function Cockpit() {
-  return (
-    <ProvideMessages namespaces={["common", "Cockpit"]}>
-      <main className="container mx-auto mb-4 mt-6 max-w-7xl md:mt-10">
-        <div className="box mb-4 justify-between space-y-2 md:flex md:space-y-0">
-          <PredictionGameSelect />
-          <PredictionGameAwards />
-        </div>
-        <PredictionGameStats />
-        <div className="mt-6 flex flex-col justify-stretch gap-8 md:mt-10 md:flex-row">
-          <UpcomingGames />
-          <CurrentRank />
-        </div>
-      </main>
-    </ProvideMessages>
-  );
+	return (
+		<ProvideMessages namespaces={['common', 'Cockpit']}>
+			<main className="container mx-auto mb-4 mt-6 max-w-7xl md:mt-10">
+				<div className="box mb-4 justify-between space-y-2 md:flex md:space-y-0">
+					<PredictionGameSelect />
+					<PredictionGameAwards />
+				</div>
+				<PredictionGameStats />
+				<div className="mt-6 flex flex-col justify-stretch gap-8 md:mt-10 md:flex-row">
+					<UpcomingGames />
+					<CurrentRank />
+				</div>
+			</main>
+		</ProvideMessages>
+	);
 }

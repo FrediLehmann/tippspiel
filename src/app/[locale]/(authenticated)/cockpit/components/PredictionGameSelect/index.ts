@@ -1,1 +1,1 @@
-export { default } from "./PredictionGameSelect";
+export { default } from './PredictionGameSelect';

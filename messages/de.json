@@ -1,209 +1,209 @@
 {
-  "Cockpit": {
-    "games": {
-      "allGames": "Alle Spiele",
-      "game": {
-        "date": "Zeit",
-        "editTip": "Tipp bearbeiten",
-        "points": "Punkte",
-        "pointsInfo": "Sie erhalten 1 Punkt für jede richtige Torvorhersage, außerdem erhalten Sie einen Punkt für die richtige Tordifferenz. Wenn Sie den Sieger richtig getippt haben, gibt es auch einen Punkt und Sie erhalten einen Extrapunkt, wenn Sie das Ergebnis richtig getippt haben",
-        "result": "Ergebnis",
-        "teams": "Mannschaften",
-        "tip": "Tipp"
-      },
-      "title": "Spiele"
-    },
-    "metadata": {
-      "description": "Die neuesten Ergebnisse und bevorstehenden Spiele",
-      "title": "Tippspiel | Cockpit"
-    },
-    "ranklist": {
-      "change": "Änderung",
-      "name": "Name",
-      "points": "Punkte",
-      "ranking": "Rangfolge",
-      "title": "Ranking-Übersicht"
-    },
-    "rewards": "Belohnung",
-    "stats": {
-      "accuracy": "Genauigkeit",
-      "difference": "Unterschied",
-      "points": "Punkte",
-      "rank": "Rang",
-      "rankNumber": "{rank, selectordinal, other {#.}}"
-    }
-  },
-  "Error": {
-    "cardButton": "Zurück zur Startseite",
-    "cardContent": "Bei der Bearbeitung Ihrer Anfrage ist ein unerwarteter Fehler aufgetreten. Wir haben den Fehler gespeichert und werden daran arbeiten, ihn zu beheben.",
-    "cardTitle": "Wir hatten Probleme, Ihrer Anfrage nachzukommen",
-    "metadata": {
-      "description": "Fehlerseite",
-      "title": "Tippspiel | Fehler"
-    }
-  },
-  "ForgotPassword": {
-    "metadata": {
-      "description": "Passwort zurücksetzen",
-      "title": "Tippspiel | Passwort vergessen"
-    },
-    "passwordForm": {
-      "cardDescription": "Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen einen Link zum Zurücksetzen Ihres Passworts.",
-      "cardTitle": "Passwort zurücksetzen"
-    },
-    "signin": "Anmelden.",
-    "signinRedirect": "Konnten Sie sich an Ihr passwort erinnern?"
-  },
-  "Home": {
-    "metadata": {
-      "description": "Home page",
-      "title": "Tippspiel | Home"
-    }
-  },
-  "Login": {
-    "metadata": {
-      "description": "Loginseite",
-      "title": "Tippspiel | Login"
-    },
-    "pageDescription": "Melden Sie sich an, um auf das Tippspiel zuzugreifen und daran teilzunehmen",
-    "pageTitle": "Anmeldung",
-    "signup": "Registrieren Sie sich.",
-    "signupRedirect": "Sie haben noch kein Konto?",
-    "sozialLogin": {
-      "separator": "oder hier anmelden"
-    }
-  },
-  "ResetPassword": {
-    "metadata": {
-      "description": "Passwort zurücksetzen",
-      "title": "Tippspiel | Passwort zurücksetzen"
-    },
-    "resetForm": {
-      "cardDescription": "Legen Sie Ihr neues Passwort fest.",
-      "cardTitle": "Passwort zurücksetzen"
-    }
-  },
-  "Signup": {
-    "metadata": {
-      "description": "Registerieren Sie sich für das Tippspiel",
-      "title": "Tippspiel | Registrieren"
-    },
-    "pageDescription": "Registrieren Sie sich, um auf das Tippspiel zuzugreifen und daran teilzunehmen",
-    "pageTitle": "Registrieren",
-    "signin": "Anmelden.",
-    "signinRedirect": "Sie haben bereits ein Konto?"
-  },
-  "common": {
-    "forgotPasswordForm": {
-      "email": {
-        "label": "Email"
-      },
-      "formSchemaMessages": {
-        "email": {
-          "required": "E-Mailadresse wird benötigt.",
-          "validated": "Ungültige E-Mail-Adresse."
-        }
-      },
-      "resetFailedAlert": {
-        "description": "Beim Zurücksetzen des Passworts ist ein Fehler aufgetreten. Bitte versuche es erneut.",
-        "title": "Zurücksetzen fehlgeschlagen"
-      },
-      "resetSuccessToast": {
-        "description": "Suchen Sie in Ihren E-Mails nach einem Link zum Zurücksetzen Ihres Passworts.",
-        "title": "Zurücksetzen erfolgreich"
-      }
-    },
-    "headerNav": {
-      "login": "Anmeldung"
-    },
-    "login": "Login",
-    "logout": "Ausloggen",
-    "passwordInputAriaLabel": "Passworteingabe",
-    "resetPassword": "Passwort zurücksetzen",
-    "resetPasswordForm": {
-      "formSchemaMessages": {
-        "password": {
-          "maxLength": "Passwort wird benötigt",
-          "minLength": "Das Passwort muss mindestens 8 Zeichen lang sein",
-          "pattern": "Das Passwort muss mindestens eine Zahl, einen Großbuchstaben, einen Kleinbuchstaben und ein Sonderzeichen enthalten",
-          "required": "Das Passwort kann bis zu 100 Zeichen lang sein"
-        },
-        "passwordConfirmation": {
-          "match": "Passwörter stimmen nicht überein"
-        }
-      },
-      "password": {
-        "label": "Passwort"
-      },
-      "passwordConfirmation": {
-        "label": "Passwort Bestätigen"
-      },
-      "signupFailAlert": {
-        "description": "Beim Zurücksetzen des Passworts ist ein Fehler aufgetreten. Bitte versuche es erneut.",
-        "title": "Zurücksetzen fehlgeschlagen"
-      }
-    },
-    "saveNewPassword": "Neues Passwort speichern",
-    "signInForm": {
-      "email": {
-        "label": "Email"
-      },
-      "formSchemaMessages": {
-        "email": {
-          "required": "E-Mailadresse wird benötigt.",
-          "validated": "Ungültige E-Mail-Adresse."
-        },
-        "password": {
-          "maxLength": "Passwort wird benötigt",
-          "minLength": "Das Passwort muss mindestens 8 Zeichen lang sein",
-          "pattern": "Das Passwort muss mindestens eine Zahl, einen Großbuchstaben, einen Kleinbuchstaben und ein Sonderzeichen enthalten",
-          "required": "Das Passwort kann bis zu 100 Zeichen lang sein"
-        }
-      },
-      "password": {
-        "forgot": "Passwort vergessen?",
-        "label": "Passwort"
-      },
-      "signinFailAlert": {
-        "description": "Beim Anmelden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
-        "title": "Anmeldung fehlgeschlagen"
-      }
-    },
-    "signUpForm": {
-      "email": {
-        "label": "Email"
-      },
-      "formSchemaMessages": {
-        "email": {
-          "required": "E-Mailadresse wird benötigt.",
-          "validated": "Ungültige E-Mail-Adresse."
-        },
-        "password": {
-          "maxLength": "Passwort wird benötigt",
-          "minLength": "Das Passwort muss mindestens 8 Zeichen lang sein",
-          "pattern": "Das Passwort muss mindestens eine Zahl, einen Großbuchstaben, einen Kleinbuchstaben und ein Sonderzeichen enthalten",
-          "required": "Das Passwort kann bis zu 100 Zeichen lang sein"
-        },
-        "passwordConfirmation": {
-          "match": "Passwörter stimmen nicht überein"
-        }
-      },
-      "password": {
-        "label": "Passwort"
-      },
-      "passwordConfirmation": {
-        "label": "Passwort Bestätigen"
-      },
-      "signupFailAlert": {
-        "description": "Bei der Anmeldung ist ein Fehler aufgetreten. Bitte versuche es erneut.",
-        "title": "Anmeldung gescheitert"
-      },
-      "signupSuccessToast": {
-        "description": "Bestätigen Sie Ihre E-Mail-Adresse und melden Sie sich an.",
-        "title": "Registrierung erfolgreich"
-      }
-    },
-    "signup": "Registrieren",
-    "submit": "Speichern"
-  }
+	"Cockpit": {
+		"games": {
+			"allGames": "Alle Spiele",
+			"game": {
+				"date": "Zeit",
+				"editTip": "Tipp bearbeiten",
+				"points": "Punkte",
+				"pointsInfo": "Sie erhalten 1 Punkt für jede richtige Torvorhersage, außerdem erhalten Sie einen Punkt für die richtige Tordifferenz. Wenn Sie den Sieger richtig getippt haben, gibt es auch einen Punkt und Sie erhalten einen Extrapunkt, wenn Sie das Ergebnis richtig getippt haben",
+				"result": "Ergebnis",
+				"teams": "Mannschaften",
+				"tip": "Tipp"
+			},
+			"title": "Spiele"
+		},
+		"metadata": {
+			"description": "Die neuesten Ergebnisse und bevorstehenden Spiele",
+			"title": "Tippspiel | Cockpit"
+		},
+		"ranklist": {
+			"change": "Änderung",
+			"name": "Name",
+			"points": "Punkte",
+			"ranking": "Rangfolge",
+			"title": "Ranking-Übersicht"
+		},
+		"rewards": "Belohnung",
+		"stats": {
+			"accuracy": "Genauigkeit",
+			"difference": "Unterschied",
+			"points": "Punkte",
+			"rank": "Rang",
+			"rankNumber": "{rank, selectordinal, other {#.}}"
+		}
+	},
+	"Error": {
+		"cardButton": "Zurück zur Startseite",
+		"cardContent": "Bei der Bearbeitung Ihrer Anfrage ist ein unerwarteter Fehler aufgetreten. Wir haben den Fehler gespeichert und werden daran arbeiten, ihn zu beheben.",
+		"cardTitle": "Wir hatten Probleme, Ihrer Anfrage nachzukommen",
+		"metadata": {
+			"description": "Fehlerseite",
+			"title": "Tippspiel | Fehler"
+		}
+	},
+	"ForgotPassword": {
+		"metadata": {
+			"description": "Passwort zurücksetzen",
+			"title": "Tippspiel | Passwort vergessen"
+		},
+		"passwordForm": {
+			"cardDescription": "Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen einen Link zum Zurücksetzen Ihres Passworts.",
+			"cardTitle": "Passwort zurücksetzen"
+		},
+		"signin": "Anmelden.",
+		"signinRedirect": "Konnten Sie sich an Ihr passwort erinnern?"
+	},
+	"Home": {
+		"metadata": {
+			"description": "Home page",
+			"title": "Tippspiel | Home"
+		}
+	},
+	"Login": {
+		"metadata": {
+			"description": "Loginseite",
+			"title": "Tippspiel | Login"
+		},
+		"pageDescription": "Melden Sie sich an, um auf das Tippspiel zuzugreifen und daran teilzunehmen",
+		"pageTitle": "Anmeldung",
+		"signup": "Registrieren Sie sich.",
+		"signupRedirect": "Sie haben noch kein Konto?",
+		"sozialLogin": {
+			"separator": "oder hier anmelden"
+		}
+	},
+	"ResetPassword": {
+		"metadata": {
+			"description": "Passwort zurücksetzen",
+			"title": "Tippspiel | Passwort zurücksetzen"
+		},
+		"resetForm": {
+			"cardDescription": "Legen Sie Ihr neues Passwort fest.",
+			"cardTitle": "Passwort zurücksetzen"
+		}
+	},
+	"Signup": {
+		"metadata": {
+			"description": "Registerieren Sie sich für das Tippspiel",
+			"title": "Tippspiel | Registrieren"
+		},
+		"pageDescription": "Registrieren Sie sich, um auf das Tippspiel zuzugreifen und daran teilzunehmen",
+		"pageTitle": "Registrieren",
+		"signin": "Anmelden.",
+		"signinRedirect": "Sie haben bereits ein Konto?"
+	},
+	"common": {
+		"forgotPasswordForm": {
+			"email": {
+				"label": "Email"
+			},
+			"formSchemaMessages": {
+				"email": {
+					"required": "E-Mailadresse wird benötigt.",
+					"validated": "Ungültige E-Mail-Adresse."
+				}
+			},
+			"resetFailedAlert": {
+				"description": "Beim Zurücksetzen des Passworts ist ein Fehler aufgetreten. Bitte versuche es erneut.",
+				"title": "Zurücksetzen fehlgeschlagen"
+			},
+			"resetSuccessToast": {
+				"description": "Suchen Sie in Ihren E-Mails nach einem Link zum Zurücksetzen Ihres Passworts.",
+				"title": "Zurücksetzen erfolgreich"
+			}
+		},
+		"headerNav": {
+			"login": "Anmeldung"
+		},
+		"login": "Login",
+		"logout": "Ausloggen",
+		"passwordInputAriaLabel": "Passworteingabe",
+		"resetPassword": "Passwort zurücksetzen",
+		"resetPasswordForm": {
+			"formSchemaMessages": {
+				"password": {
+					"maxLength": "Passwort wird benötigt",
+					"minLength": "Das Passwort muss mindestens 8 Zeichen lang sein",
+					"pattern": "Das Passwort muss mindestens eine Zahl, einen Großbuchstaben, einen Kleinbuchstaben und ein Sonderzeichen enthalten",
+					"required": "Das Passwort kann bis zu 100 Zeichen lang sein"
+				},
+				"passwordConfirmation": {
+					"match": "Passwörter stimmen nicht überein"
+				}
+			},
+			"password": {
+				"label": "Passwort"
+			},
+			"passwordConfirmation": {
+				"label": "Passwort Bestätigen"
+			},
+			"signupFailAlert": {
+				"description": "Beim Zurücksetzen des Passworts ist ein Fehler aufgetreten. Bitte versuche es erneut.",
+				"title": "Zurücksetzen fehlgeschlagen"
+			}
+		},
+		"saveNewPassword": "Neues Passwort speichern",
+		"signInForm": {
+			"email": {
+				"label": "Email"
+			},
+			"formSchemaMessages": {
+				"email": {
+					"required": "E-Mailadresse wird benötigt.",
+					"validated": "Ungültige E-Mail-Adresse."
+				},
+				"password": {
+					"maxLength": "Passwort wird benötigt",
+					"minLength": "Das Passwort muss mindestens 8 Zeichen lang sein",
+					"pattern": "Das Passwort muss mindestens eine Zahl, einen Großbuchstaben, einen Kleinbuchstaben und ein Sonderzeichen enthalten",
+					"required": "Das Passwort kann bis zu 100 Zeichen lang sein"
+				}
+			},
+			"password": {
+				"forgot": "Passwort vergessen?",
+				"label": "Passwort"
+			},
+			"signinFailAlert": {
+				"description": "Beim Anmelden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+				"title": "Anmeldung fehlgeschlagen"
+			}
+		},
+		"signUpForm": {
+			"email": {
+				"label": "Email"
+			},
+			"formSchemaMessages": {
+				"email": {
+					"required": "E-Mailadresse wird benötigt.",
+					"validated": "Ungültige E-Mail-Adresse."
+				},
+				"password": {
+					"maxLength": "Passwort wird benötigt",
+					"minLength": "Das Passwort muss mindestens 8 Zeichen lang sein",
+					"pattern": "Das Passwort muss mindestens eine Zahl, einen Großbuchstaben, einen Kleinbuchstaben und ein Sonderzeichen enthalten",
+					"required": "Das Passwort kann bis zu 100 Zeichen lang sein"
+				},
+				"passwordConfirmation": {
+					"match": "Passwörter stimmen nicht überein"
+				}
+			},
+			"password": {
+				"label": "Passwort"
+			},
+			"passwordConfirmation": {
+				"label": "Passwort Bestätigen"
+			},
+			"signupFailAlert": {
+				"description": "Bei der Anmeldung ist ein Fehler aufgetreten. Bitte versuche es erneut.",
+				"title": "Anmeldung gescheitert"
+			},
+			"signupSuccessToast": {
+				"description": "Bestätigen Sie Ihre E-Mail-Adresse und melden Sie sich an.",
+				"title": "Registrierung erfolgreich"
+			}
+		},
+		"signup": "Registrieren",
+		"submit": "Speichern"
+	}
 }

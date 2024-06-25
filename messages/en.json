@@ -1,209 +1,209 @@
 {
-  "Home": {
-    "metadata": {
-      "description": "Home page",
-      "title": "Tippspiel | Home"
-    }
-  },
-  "Login": {
-    "metadata": {
-      "description": "Login page",
-      "title": "Tippspiel | Login"
-    },
-    "pageDescription": "Login to access and take part in the prediction game",
-    "pageTitle": "Login",
-    "signupRedirect": "Don't have an account yet?",
-    "signup": "Sign up.",
-    "sozialLogin": {
-      "separator": "or continue with"
-    }
-  },
-  "Signup": {
-    "metadata": {
-      "description": "Signup page",
-      "title": "Tippspiel | Signup"
-    },
-    "pageTitle": "Sign up",
-    "pageDescription": "Sign up to access and take part in the prediction game",
-    "signinRedirect": "Already have an account?",
-    "signin": "Sign in."
-  },
-  "ForgotPassword": {
-    "metadata": {
-      "title": "Tippspiel | Forgot Passowrd",
-      "description": "Reset password page"
-    },
-    "passwordForm": {
-      "cardTitle": "Reset password",
-      "cardDescription": "Enter your email address and we will send you a link to reset your password."
-    },
-    "signinRedirect": "Remembered your password?",
-    "signin": "Sign in."
-  },
-  "ResetPassword": {
-    "metadata": {
-      "title": "Tippspiel | Reset Passowrd",
-      "description": "Reset password"
-    },
-    "resetForm": {
-      "cardTitle": "Reset password",
-      "cardDescription": "Set your new password."
-    }
-  },
-  "Error": {
-    "metadata": {
-      "title": "Tippspiel | Error",
-      "description": "Error page"
-    },
-    "cardTitle": "We've had trouble fullfiling your request",
-    "cardContent": "While processing your request an unexpected error happened. We've saved the error and will work on fixing it.",
-    "cardButton": "Go back to homepage"
-  },
-  "Cockpit": {
-    "metadata": {
-      "title": "Tippspiel | Cockpit",
-      "description": "The latest results and upcoming matches"
-    },
-    "rewards": "Rewards",
-    "ranklist": {
-      "title": "Ranking overview",
-      "ranking": "Ranking",
-      "name": "Name",
-      "points": "Points",
-      "change": "Change"
-    },
-    "stats": {
-      "rank": "Rank",
-      "rankNumber": "{rank, selectordinal, one {#st} two {#nd} few {#rd} other {#th}}",
-      "difference": "Difference",
-      "accuracy": "Accuracy",
-      "points": "Points"
-    },
-    "games": {
-      "title": "Games",
-      "allGames": "All games",
-      "game": {
-        "date": "Time",
-        "teams": "Teams",
-        "tip": "Tip",
-        "result": "Result",
-        "points": "Points",
-        "editTip": "Edit tip",
-        "pointsInfo": "You get 1 point for each correct goal prediction, you also get a point for the correct goal difference, if you guessed the winner correctly this will also give a point and you get an extrapoint if you guessed the result correctly"
-      }
-    }
-  },
-  "common": {
-    "signInForm": {
-      "email": {
-        "label": "Email"
-      },
-      "formSchemaMessages": {
-        "email": {
-          "required": "Email address is required.",
-          "validated": "Invalid email address."
-        },
-        "password": {
-          "maxLength": "Password is required",
-          "minLength": "The password must be at least 8 characters long",
-          "pattern": "The password must contain at least one number, one uppercase letter, one lowercase letter, and one special character",
-          "required": "The password can be up to 100 characters long"
-        }
-      },
-      "password": {
-        "label": "Password",
-        "forgot": "Forgot password?"
-      },
-      "signinFailAlert": {
-        "title": "Sign in failed",
-        "description": "An error occurred while signing in. Please try again."
-      }
-    },
-    "signUpForm": {
-      "email": {
-        "label": "Email"
-      },
-      "formSchemaMessages": {
-        "email": {
-          "required": "Email address is required.",
-          "validated": "Invalid email address."
-        },
-        "password": {
-          "maxLength": "Password is required",
-          "minLength": "The password must be at least 8 characters long",
-          "pattern": "The password must contain at least one number, one uppercase letter, one lowercase letter, and one special character",
-          "required": "The password can be up to 100 characters long"
-        },
-        "passwordConfirmation": {
-          "match": "Passwords do not match"
-        }
-      },
-      "password": {
-        "label": "Password"
-      },
-      "passwordConfirmation": {
-        "label": "Password confirmation"
-      },
-      "signupSuccessToast": {
-        "title": "Sign up successful",
-        "description": "Confirm you email address and sign in."
-      },
-      "signupFailAlert": {
-        "title": "Sign up failed",
-        "description": "An error occurred while signing up. Please try again."
-      }
-    },
-    "forgotPasswordForm": {
-      "email": {
-        "label": "Email"
-      },
-      "formSchemaMessages": {
-        "email": {
-          "required": "Email address is required.",
-          "validated": "Invalid email address."
-        }
-      },
-      "resetSuccessToast": {
-        "title": "Reset successful",
-        "description": "Check your email for a link to reset your password."
-      },
-      "resetFailedAlert": {
-        "title": "Reset failed",
-        "description": "An error occurred while resetting the password. Please try again."
-      }
-    },
-    "headerNav": {
-      "login": "Login"
-    },
-    "resetPasswordForm": {
-      "formSchemaMessages": {
-        "password": {
-          "maxLength": "Password is required",
-          "minLength": "The password must be at least 8 characters long",
-          "pattern": "The password must contain at least one number, one uppercase letter, one lowercase letter, and one special character",
-          "required": "The password can be up to 100 characters long"
-        },
-        "passwordConfirmation": {
-          "match": "Passwords do not match"
-        }
-      },
-      "password": {
-        "label": "Password"
-      },
-      "passwordConfirmation": {
-        "label": "Password confirmation"
-      },
-      "signupFailAlert": {
-        "title": "Reset failed",
-        "description": "An error occurred while resetting the password. Please try again."
-      }
-    },
-    "signup": "Sign up",
-    "login": "Login",
-    "logout": "Logout",
-    "submit": "Submit",
-    "resetPassword": "Reset password",
-    "saveNewPassword": "Save new password",
-    "passwordInputAriaLabel": "Password input"
-  }
+	"Home": {
+		"metadata": {
+			"description": "Home page",
+			"title": "Tippspiel | Home"
+		}
+	},
+	"Login": {
+		"metadata": {
+			"description": "Login page",
+			"title": "Tippspiel | Login"
+		},
+		"pageDescription": "Login to access and take part in the prediction game",
+		"pageTitle": "Login",
+		"signupRedirect": "Don't have an account yet?",
+		"signup": "Sign up.",
+		"sozialLogin": {
+			"separator": "or continue with"
+		}
+	},
+	"Signup": {
+		"metadata": {
+			"description": "Signup page",
+			"title": "Tippspiel | Signup"
+		},
+		"pageTitle": "Sign up",
+		"pageDescription": "Sign up to access and take part in the prediction game",
+		"signinRedirect": "Already have an account?",
+		"signin": "Sign in."
+	},
+	"ForgotPassword": {
+		"metadata": {
+			"title": "Tippspiel | Forgot Passowrd",
+			"description": "Reset password page"
+		},
+		"passwordForm": {
+			"cardTitle": "Reset password",
+			"cardDescription": "Enter your email address and we will send you a link to reset your password."
+		},
+		"signinRedirect": "Remembered your password?",
+		"signin": "Sign in."
+	},
+	"ResetPassword": {
+		"metadata": {
+			"title": "Tippspiel | Reset Passowrd",
+			"description": "Reset password"
+		},
+		"resetForm": {
+			"cardTitle": "Reset password",
+			"cardDescription": "Set your new password."
+		}
+	},
+	"Error": {
+		"metadata": {
+			"title": "Tippspiel | Error",
+			"description": "Error page"
+		},
+		"cardTitle": "We've had trouble fullfiling your request",
+		"cardContent": "While processing your request an unexpected error happened. We've saved the error and will work on fixing it.",
+		"cardButton": "Go back to homepage"
+	},
+	"Cockpit": {
+		"metadata": {
+			"title": "Tippspiel | Cockpit",
+			"description": "The latest results and upcoming matches"
+		},
+		"rewards": "Rewards",
+		"ranklist": {
+			"title": "Ranking overview",
+			"ranking": "Ranking",
+			"name": "Name",
+			"points": "Points",
+			"change": "Change"
+		},
+		"stats": {
+			"rank": "Rank",
+			"rankNumber": "{rank, selectordinal, one {#st} two {#nd} few {#rd} other {#th}}",
+			"difference": "Difference",
+			"accuracy": "Accuracy",
+			"points": "Points"
+		},
+		"games": {
+			"title": "Games",
+			"allGames": "All games",
+			"game": {
+				"date": "Time",
+				"teams": "Teams",
+				"tip": "Tip",
+				"result": "Result",
+				"points": "Points",
+				"editTip": "Edit tip",
+				"pointsInfo": "You get 1 point for each correct goal prediction, you also get a point for the correct goal difference, if you guessed the winner correctly this will also give a point and you get an extrapoint if you guessed the result correctly"
+			}
+		}
+	},
+	"common": {
+		"signInForm": {
+			"email": {
+				"label": "Email"
+			},
+			"formSchemaMessages": {
+				"email": {
+					"required": "Email address is required.",
+					"validated": "Invalid email address."
+				},
+				"password": {
+					"maxLength": "Password is required",
+					"minLength": "The password must be at least 8 characters long",
+					"pattern": "The password must contain at least one number, one uppercase letter, one lowercase letter, and one special character",
+					"required": "The password can be up to 100 characters long"
+				}
+			},
+			"password": {
+				"label": "Password",
+				"forgot": "Forgot password?"
+			},
+			"signinFailAlert": {
+				"title": "Sign in failed",
+				"description": "An error occurred while signing in. Please try again."
+			}
+		},
+		"signUpForm": {
+			"email": {
+				"label": "Email"
+			},
+			"formSchemaMessages": {
+				"email": {
+					"required": "Email address is required.",
+					"validated": "Invalid email address."
+				},
+				"password": {
+					"maxLength": "Password is required",
+					"minLength": "The password must be at least 8 characters long",
+					"pattern": "The password must contain at least one number, one uppercase letter, one lowercase letter, and one special character",
+					"required": "The password can be up to 100 characters long"
+				},
+				"passwordConfirmation": {
+					"match": "Passwords do not match"
+				}
+			},
+			"password": {
+				"label": "Password"
+			},
+			"passwordConfirmation": {
+				"label": "Password confirmation"
+			},
+			"signupSuccessToast": {
+				"title": "Sign up successful",
+				"description": "Confirm you email address and sign in."
+			},
+			"signupFailAlert": {
+				"title": "Sign up failed",
+				"description": "An error occurred while signing up. Please try again."
+			}
+		},
+		"forgotPasswordForm": {
+			"email": {
+				"label": "Email"
+			},
+			"formSchemaMessages": {
+				"email": {
+					"required": "Email address is required.",
+					"validated": "Invalid email address."
+				}
+			},
+			"resetSuccessToast": {
+				"title": "Reset successful",
+				"description": "Check your email for a link to reset your password."
+			},
+			"resetFailedAlert": {
+				"title": "Reset failed",
+				"description": "An error occurred while resetting the password. Please try again."
+			}
+		},
+		"headerNav": {
+			"login": "Login"
+		},
+		"resetPasswordForm": {
+			"formSchemaMessages": {
+				"password": {
+					"maxLength": "Password is required",
+					"minLength": "The password must be at least 8 characters long",
+					"pattern": "The password must contain at least one number, one uppercase letter, one lowercase letter, and one special character",
+					"required": "The password can be up to 100 characters long"
+				},
+				"passwordConfirmation": {
+					"match": "Passwords do not match"
+				}
+			},
+			"password": {
+				"label": "Password"
+			},
+			"passwordConfirmation": {
+				"label": "Password confirmation"
+			},
+			"signupFailAlert": {
+				"title": "Reset failed",
+				"description": "An error occurred while resetting the password. Please try again."
+			}
+		},
+		"signup": "Sign up",
+		"login": "Login",
+		"logout": "Logout",
+		"submit": "Submit",
+		"resetPassword": "Reset password",
+		"saveNewPassword": "Save new password",
+		"passwordInputAriaLabel": "Password input"
+	}
 }

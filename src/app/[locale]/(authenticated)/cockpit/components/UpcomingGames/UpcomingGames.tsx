@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { Games, Title } from "./components";
+import { Games, Title } from './components';
 
 export default function UpcomingGames() {
-  return (
-    <div className="grow">
-      <Title />
-      <Games />
-    </div>
-  );
+	return (
+		<div className="grow">
+			<Title />
+			<Games />
+		</div>
+	);
 }

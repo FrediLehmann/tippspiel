@@ -1,1 +1,1 @@
-export { default as supabaseMiddleware } from "./middleware";
+export { default as supabaseMiddleware } from './middleware';

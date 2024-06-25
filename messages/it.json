@@ -1,209 +1,209 @@
 {
-  "Cockpit": {
-    "games": {
-      "allGames": "Tutti i giochi",
-      "game": {
-        "date": "Tempo",
-        "editTip": "Modifica suggerimento",
-        "points": "Punti",
-        "pointsInfo": "Ottieni 1 punto per ogni pronostico goal corretto, ottieni anche un punto per la differenza reti corretta, se hai indovinato correttamente il vincitore anche questo ti darà un punto e ottieni un punto extra se hai indovinato correttamente il risultato",
-        "result": "Risultato",
-        "teams": "Squadre",
-        "tip": "Mancia"
-      },
-      "title": "Giochi"
-    },
-    "metadata": {
-      "description": "Gli ultimi risultati e le prossime partite",
-      "title": "Tippspiel | Pozzetto"
-    },
-    "ranklist": {
-      "change": "Modifica",
-      "name": "Nome",
-      "points": "Punti",
-      "ranking": "Classifica",
-      "title": "Panoramica della classifica"
-    },
-    "rewards": "Premi",
-    "stats": {
-      "accuracy": "Precisione",
-      "difference": "Differenza",
-      "points": "Punti",
-      "rank": "Rango",
-      "rankNumber": "{rank, selectordinal, other {#°}}"
-    }
-  },
-  "Error": {
-    "cardButton": "Torna alla homepage",
-    "cardContent": "Durante l'elaborazione della tua richiesta si è verificato un errore imprevisto. Abbiamo salvato l'errore e lavoreremo per risolverlo.",
-    "cardTitle": "Abbiamo avuto problemi a soddisfare la tua richiesta",
-    "metadata": {
-      "description": "Pagina di errore",
-      "title": "Tipspiel | Errore"
-    }
-  },
-  "ForgotPassword": {
-    "metadata": {
-      "description": "Pagina Reimposta password",
-      "title": "Tipspiel | Password dimenticata"
-    },
-    "passwordForm": {
-      "cardDescription": "Inserisci il tuo indirizzo email e ti invieremo un collegamento per reimpostare la password.",
-      "cardTitle": "Resetta la password"
-    },
-    "signin": "Registrazione.",
-    "signinRedirect": "Hai ricordato la password?"
-  },
-  "Home": {
-    "metadata": {
-      "description": "Home page",
-      "title": "Tippspiel | Home"
-    }
-  },
-  "Login": {
-    "metadata": {
-      "description": "Pagina di login",
-      "title": "Tippspiel | Login"
-    },
-    "pageDescription": "Effettua il login per accedere e partecipare al gioco pronostico",
-    "pageTitle": "Login",
-    "signup": "Iscrizione.",
-    "signupRedirect": "Non hai ancora un conto?",
-    "sozialLogin": {
-      "separator": "o continuare con"
-    }
-  },
-  "ResetPassword": {
-    "metadata": {
-      "description": "Resetta la password",
-      "title": "Tipspiel | \nReimposta password"
-    },
-    "resetForm": {
-      "cardDescription": "Imposta la tua nuova password.",
-      "cardTitle": "Resetta la password"
-    }
-  },
-  "Signup": {
-    "metadata": {
-      "description": "Pagina di registrazione",
-      "title": "Tippspiel | Iscrizione"
-    },
-    "pageDescription": "Iscriviti per accedere e prendere parte al gioco dei pronostici",
-    "pageTitle": "Iscrizione",
-    "signin": "Registrazione.",
-    "signinRedirect": "Hai già un account?"
-  },
-  "common": {
-    "forgotPasswordForm": {
-      "email": {
-        "label": "E-mail"
-      },
-      "formSchemaMessages": {
-        "email": {
-          "required": "L'indirizzo e-mail è obbligatorio.",
-          "validated": "Indirizzo email non valido."
-        }
-      },
-      "resetFailedAlert": {
-        "description": "Si è verificato un errore durante la reimpostazione della password. Per favore riprova.",
-        "title": "Reimpostazione non riuscita"
-      },
-      "resetSuccessToast": {
-        "description": "Controlla la tua email per un collegamento per reimpostare la password.",
-        "title": "Reimpostazione riuscita"
-      }
-    },
-    "headerNav": {
-      "login": "Login"
-    },
-    "login": "Login",
-    "logout": "Disconnettersi",
-    "passwordInputAriaLabel": "Inserimento della password",
-    "resetPassword": "Resetta la password",
-    "resetPasswordForm": {
-      "formSchemaMessages": {
-        "password": {
-          "maxLength": "E 'richiesta la password",
-          "minLength": "La password deve essere lunga almeno 8 caratteri",
-          "pattern": "La password deve contenere almeno un numero, una lettera maiuscola, una lettera minuscola e un carattere speciale",
-          "required": "La password può contenere fino a 100 caratteri"
-        },
-        "passwordConfirmation": {
-          "match": "le passwords non corrispondono"
-        }
-      },
-      "password": {
-        "label": "Parola d'ordine"
-      },
-      "passwordConfirmation": {
-        "label": "conferma password"
-      },
-      "signupFailAlert": {
-        "description": "Si è verificato un errore durante la reimpostazione della password. Per favore riprova.",
-        "title": "Reimpostazione non riuscita"
-      }
-    },
-    "saveNewPassword": "Salva la nuova password",
-    "signInForm": {
-      "email": {
-        "label": "E-mail"
-      },
-      "formSchemaMessages": {
-        "email": {
-          "required": "L'indirizzo e-mail è obbligatorio.",
-          "validated": "Indirizzo email non valido."
-        },
-        "password": {
-          "maxLength": "E 'richiesta la password",
-          "minLength": "La password deve essere lunga almeno 8 caratteri",
-          "pattern": "La password deve contenere almeno un numero, una lettera maiuscola, una lettera minuscola e un carattere speciale",
-          "required": "La password può contenere fino a 100 caratteri"
-        }
-      },
-      "password": {
-        "forgot": "Ha dimenticato la password?",
-        "label": "Parola d'ordine"
-      },
-      "signinFailAlert": {
-        "description": "Si è verificato un errore durante l'accesso. Riprova.",
-        "title": "Accesso fallito"
-      }
-    },
-    "signUpForm": {
-      "email": {
-        "label": "E-mail"
-      },
-      "formSchemaMessages": {
-        "email": {
-          "required": "L'indirizzo e-mail è obbligatorio.",
-          "validated": "Indirizzo email non valido."
-        },
-        "password": {
-          "maxLength": "E 'richiesta la password",
-          "minLength": "La password deve essere lunga almeno 8 caratteri",
-          "pattern": "La password deve contenere almeno un numero, una lettera maiuscola, una lettera minuscola e un carattere speciale",
-          "required": "La password può contenere fino a 100 caratteri"
-        },
-        "passwordConfirmation": {
-          "match": "le passwords non corrispondono"
-        }
-      },
-      "password": {
-        "label": "Parola d'ordine"
-      },
-      "passwordConfirmation": {
-        "label": "conferma password"
-      },
-      "signupFailAlert": {
-        "description": "Si è verificato un errore durante la registrazione. Per favore riprova.",
-        "title": "Accesso fallito"
-      },
-      "signupSuccessToast": {
-        "description": "Conferma il tuo indirizzo email e accedi.",
-        "title": "Iscrizione riuscita"
-      }
-    },
-    "signup": "Iscrizione",
-    "submit": "Invia"
-  }
+	"Cockpit": {
+		"games": {
+			"allGames": "Tutti i giochi",
+			"game": {
+				"date": "Tempo",
+				"editTip": "Modifica suggerimento",
+				"points": "Punti",
+				"pointsInfo": "Ottieni 1 punto per ogni pronostico goal corretto, ottieni anche un punto per la differenza reti corretta, se hai indovinato correttamente il vincitore anche questo ti darà un punto e ottieni un punto extra se hai indovinato correttamente il risultato",
+				"result": "Risultato",
+				"teams": "Squadre",
+				"tip": "Mancia"
+			},
+			"title": "Giochi"
+		},
+		"metadata": {
+			"description": "Gli ultimi risultati e le prossime partite",
+			"title": "Tippspiel | Pozzetto"
+		},
+		"ranklist": {
+			"change": "Modifica",
+			"name": "Nome",
+			"points": "Punti",
+			"ranking": "Classifica",
+			"title": "Panoramica della classifica"
+		},
+		"rewards": "Premi",
+		"stats": {
+			"accuracy": "Precisione",
+			"difference": "Differenza",
+			"points": "Punti",
+			"rank": "Rango",
+			"rankNumber": "{rank, selectordinal, other {#°}}"
+		}
+	},
+	"Error": {
+		"cardButton": "Torna alla homepage",
+		"cardContent": "Durante l'elaborazione della tua richiesta si è verificato un errore imprevisto. Abbiamo salvato l'errore e lavoreremo per risolverlo.",
+		"cardTitle": "Abbiamo avuto problemi a soddisfare la tua richiesta",
+		"metadata": {
+			"description": "Pagina di errore",
+			"title": "Tipspiel | Errore"
+		}
+	},
+	"ForgotPassword": {
+		"metadata": {
+			"description": "Pagina Reimposta password",
+			"title": "Tipspiel | Password dimenticata"
+		},
+		"passwordForm": {
+			"cardDescription": "Inserisci il tuo indirizzo email e ti invieremo un collegamento per reimpostare la password.",
+			"cardTitle": "Resetta la password"
+		},
+		"signin": "Registrazione.",
+		"signinRedirect": "Hai ricordato la password?"
+	},
+	"Home": {
+		"metadata": {
+			"description": "Home page",
+			"title": "Tippspiel | Home"
+		}
+	},
+	"Login": {
+		"metadata": {
+			"description": "Pagina di login",
+			"title": "Tippspiel | Login"
+		},
+		"pageDescription": "Effettua il login per accedere e partecipare al gioco pronostico",
+		"pageTitle": "Login",
+		"signup": "Iscrizione.",
+		"signupRedirect": "Non hai ancora un conto?",
+		"sozialLogin": {
+			"separator": "o continuare con"
+		}
+	},
+	"ResetPassword": {
+		"metadata": {
+			"description": "Resetta la password",
+			"title": "Tipspiel | \nReimposta password"
+		},
+		"resetForm": {
+			"cardDescription": "Imposta la tua nuova password.",
+			"cardTitle": "Resetta la password"
+		}
+	},
+	"Signup": {
+		"metadata": {
+			"description": "Pagina di registrazione",
+			"title": "Tippspiel | Iscrizione"
+		},
+		"pageDescription": "Iscriviti per accedere e prendere parte al gioco dei pronostici",
+		"pageTitle": "Iscrizione",
+		"signin": "Registrazione.",
+		"signinRedirect": "Hai già un account?"
+	},
+	"common": {
+		"forgotPasswordForm": {
+			"email": {
+				"label": "E-mail"
+			},
+			"formSchemaMessages": {
+				"email": {
+					"required": "L'indirizzo e-mail è obbligatorio.",
+					"validated": "Indirizzo email non valido."
+				}
+			},
+			"resetFailedAlert": {
+				"description": "Si è verificato un errore durante la reimpostazione della password. Per favore riprova.",
+				"title": "Reimpostazione non riuscita"
+			},
+			"resetSuccessToast": {
+				"description": "Controlla la tua email per un collegamento per reimpostare la password.",
+				"title": "Reimpostazione riuscita"
+			}
+		},
+		"headerNav": {
+			"login": "Login"
+		},
+		"login": "Login",
+		"logout": "Disconnettersi",
+		"passwordInputAriaLabel": "Inserimento della password",
+		"resetPassword": "Resetta la password",
+		"resetPasswordForm": {
+			"formSchemaMessages": {
+				"password": {
+					"maxLength": "E 'richiesta la password",
+					"minLength": "La password deve essere lunga almeno 8 caratteri",
+					"pattern": "La password deve contenere almeno un numero, una lettera maiuscola, una lettera minuscola e un carattere speciale",
+					"required": "La password può contenere fino a 100 caratteri"
+				},
+				"passwordConfirmation": {
+					"match": "le passwords non corrispondono"
+				}
+			},
+			"password": {
+				"label": "Parola d'ordine"
+			},
+			"passwordConfirmation": {
+				"label": "conferma password"
+			},
+			"signupFailAlert": {
+				"description": "Si è verificato un errore durante la reimpostazione della password. Per favore riprova.",
+				"title": "Reimpostazione non riuscita"
+			}
+		},
+		"saveNewPassword": "Salva la nuova password",
+		"signInForm": {
+			"email": {
+				"label": "E-mail"
+			},
+			"formSchemaMessages": {
+				"email": {
+					"required": "L'indirizzo e-mail è obbligatorio.",
+					"validated": "Indirizzo email non valido."
+				},
+				"password": {
+					"maxLength": "E 'richiesta la password",
+					"minLength": "La password deve essere lunga almeno 8 caratteri",
+					"pattern": "La password deve contenere almeno un numero, una lettera maiuscola, una lettera minuscola e un carattere speciale",
+					"required": "La password può contenere fino a 100 caratteri"
+				}
+			},
+			"password": {
+				"forgot": "Ha dimenticato la password?",
+				"label": "Parola d'ordine"
+			},
+			"signinFailAlert": {
+				"description": "Si è verificato un errore durante l'accesso. Riprova.",
+				"title": "Accesso fallito"
+			}
+		},
+		"signUpForm": {
+			"email": {
+				"label": "E-mail"
+			},
+			"formSchemaMessages": {
+				"email": {
+					"required": "L'indirizzo e-mail è obbligatorio.",
+					"validated": "Indirizzo email non valido."
+				},
+				"password": {
+					"maxLength": "E 'richiesta la password",
+					"minLength": "La password deve essere lunga almeno 8 caratteri",
+					"pattern": "La password deve contenere almeno un numero, una lettera maiuscola, una lettera minuscola e un carattere speciale",
+					"required": "La password può contenere fino a 100 caratteri"
+				},
+				"passwordConfirmation": {
+					"match": "le passwords non corrispondono"
+				}
+			},
+			"password": {
+				"label": "Parola d'ordine"
+			},
+			"passwordConfirmation": {
+				"label": "conferma password"
+			},
+			"signupFailAlert": {
+				"description": "Si è verificato un errore durante la registrazione. Per favore riprova.",
+				"title": "Accesso fallito"
+			},
+			"signupSuccessToast": {
+				"description": "Conferma il tuo indirizzo email e accedi.",
+				"title": "Iscrizione riuscita"
+			}
+		},
+		"signup": "Iscrizione",
+		"submit": "Invia"
+	}
 }

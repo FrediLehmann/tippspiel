@@ -1,1 +1,1 @@
-export { default as passwordRegex } from "./passwordRegex";
+export { default as passwordRegex } from './passwordRegex';

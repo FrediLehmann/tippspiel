@@ -1,1 +1,1 @@
-export { default } from "./ForgotPasswordCard";
+export { default } from './ForgotPasswordCard';

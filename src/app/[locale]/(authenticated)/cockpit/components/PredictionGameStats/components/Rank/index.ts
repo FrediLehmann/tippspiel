@@ -1,1 +1,1 @@
-export { default } from "./Rank";
+export { default } from './Rank';

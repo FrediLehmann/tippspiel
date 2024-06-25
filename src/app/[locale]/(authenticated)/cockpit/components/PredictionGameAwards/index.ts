@@ -1,1 +1,1 @@
-export { default } from "./PredictionGameAwards";
+export { default } from './PredictionGameAwards';

@@ -1,209 +1,209 @@
 {
-  "Cockpit": {
-    "games": {
-      "allGames": "Tous les jeux",
-      "game": {
-        "date": "Temps",
-        "editTip": "Modifier le conseil",
-        "points": "Points",
-        "pointsInfo": "Vous obtenez 1 point pour chaque prédiction de but correcte, vous obtenez également un point pour la différence de buts correcte, si vous avez deviné correctement le vainqueur, cela vous donnera également un point et vous obtiendrez un point supplémentaire si vous avez deviné correctement le résultat.",
-        "result": "Résultat",
-        "teams": "Équipes",
-        "tip": "Conseil"
-      },
-      "title": "Jeux"
-    },
-    "metadata": {
-      "description": "Les derniers résultats et matchs à venir",
-      "title": "Tippspiel | Poste de pilotage"
-    },
-    "ranklist": {
-      "change": "Changement",
-      "name": "Nom",
-      "points": "Points",
-      "ranking": "Classement",
-      "title": "Aperçu du classement"
-    },
-    "rewards": "Récompenses",
-    "stats": {
-      "accuracy": "Précision",
-      "difference": "Différence",
-      "points": "Points",
-      "rank": "Rang",
-      "rankNumber": "{rank, selectordinal, one {#er} other {#e}}"
-    }
-  },
-  "Error": {
-    "cardButton": "Retour à la page d'accueil",
-    "cardContent": "Lors du traitement de votre demande, une erreur inattendue s'est produite. Nous avons enregistré l'erreur et nous nous efforcerons de la corriger.",
-    "cardTitle": "Nous avons eu du mal à répondre à votre demande",
-    "metadata": {
-      "description": "Page d'erreur",
-      "title": "Jeu de tippsiel | Erreur"
-    }
-  },
-  "ForgotPassword": {
-    "metadata": {
-      "description": "Page de réinitialisation du mot de passe",
-      "title": "Jeu de tippsiel | Mot de passe oublié"
-    },
-    "passwordForm": {
-      "cardDescription": "Entrez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre mot de passe.",
-      "cardTitle": "Réinitialiser le mot de passe"
-    },
-    "signin": "Se connecter.",
-    "signinRedirect": "Vous vous souvenez de votre mot de passe?"
-  },
-  "Home": {
-    "metadata": {
-      "description": "Home page",
-      "title": "Tippspiel | Home"
-    }
-  },
-  "Login": {
-    "metadata": {
-      "description": "Page de connexion",
-      "title": "Tippspiel | Login"
-    },
-    "pageDescription": "Connectez-vous pour accéder et participer au jeu de pronostics",
-    "pageTitle": "Se connecter",
-    "signup": "S'inscrire.",
-    "signupRedirect": "Vous n'avez pas encore de compte?",
-    "sozialLogin": {
-      "separator": "ou continuez avec"
-    }
-  },
-  "ResetPassword": {
-    "metadata": {
-      "description": "Réinitialiser le mot de passe",
-      "title": "Jeu de tippsiel | \nRéinitialiser le mot de passe"
-    },
-    "resetForm": {
-      "cardDescription": "Définissez votre nouveau mot de passe.",
-      "cardTitle": "Réinitialiser le mot de passe"
-    }
-  },
-  "Signup": {
-    "metadata": {
-      "description": "Page d'inscription",
-      "title": "Tippspiel | S'inscrire"
-    },
-    "pageDescription": "Inscrivez-vous pour accéder et participer au jeu de pronostics",
-    "pageTitle": "S'inscrire",
-    "signin": "Se connecter.",
-    "signinRedirect": "Vous avez déjà un compte?"
-  },
-  "common": {
-    "forgotPasswordForm": {
-      "email": {
-        "label": "E-mail"
-      },
-      "formSchemaMessages": {
-        "email": {
-          "required": "Adresse e-mail est nécessaire.",
-          "validated": "Adresse e-mail invalide."
-        }
-      },
-      "resetFailedAlert": {
-        "description": "Une erreur s'est produite lors de la réinitialisation du mot de passe. Veuillez réessayer.",
-        "title": "Échec de la réinitialisation"
-      },
-      "resetSuccessToast": {
-        "description": "Vérifiez votre courrier électronique pour trouver un lien permettant de réinitialiser votre mot de passe.",
-        "title": "Réinitialisation réussie"
-      }
-    },
-    "headerNav": {
-      "login": "Se connecter"
-    },
-    "login": "Se connecter",
-    "logout": "Se déconnecter",
-    "passwordInputAriaLabel": "Saisie du mot de passe",
-    "resetPassword": "Réinitialiser le mot de passe",
-    "resetPasswordForm": {
-      "formSchemaMessages": {
-        "password": {
-          "maxLength": "Mot de passe requis",
-          "minLength": "Le mot de passe doit comporter au moins 8 caractères",
-          "pattern": "Le mot de passe doit contenir au moins un chiffre, une lettre majuscule, une lettre minuscule et un caractère spécial",
-          "required": "Le mot de passe peut contenir jusqu'à 100 caractères"
-        },
-        "passwordConfirmation": {
-          "match": "Les mots de passe ne correspondent pas"
-        }
-      },
-      "password": {
-        "label": "Mot de passe"
-      },
-      "passwordConfirmation": {
-        "label": "Confirmation mot de passe"
-      },
-      "signupFailAlert": {
-        "description": "Une erreur s'est produite lors de la réinitialisation du mot de passe. Veuillez réessayer.",
-        "title": "Échec de la réinitialisation"
-      }
-    },
-    "saveNewPassword": "Enregistrer le nouveau mot de passe",
-    "signInForm": {
-      "email": {
-        "label": "E-mail"
-      },
-      "formSchemaMessages": {
-        "email": {
-          "required": "Adresse e-mail est nécessaire.",
-          "validated": "Adresse e-mail invalide."
-        },
-        "password": {
-          "maxLength": "Mot de passe requis",
-          "minLength": "Le mot de passe doit comporter au moins 8 caractères",
-          "pattern": "Le mot de passe doit contenir au moins un chiffre, une lettre majuscule, une lettre minuscule et un caractère spécial",
-          "required": "Le mot de passe peut contenir jusqu'à 100 caractères"
-        }
-      },
-      "password": {
-        "forgot": "Mot de passe oublié?",
-        "label": "Mot de passe"
-      },
-      "signinFailAlert": {
-        "description": "Une erreur s'est produite lors de la connexion. Veuillez réessayer.",
-        "title": "Échec de la connexion"
-      }
-    },
-    "signUpForm": {
-      "email": {
-        "label": "E-mail"
-      },
-      "formSchemaMessages": {
-        "email": {
-          "required": "Adresse e-mail est nécessaire.",
-          "validated": "Adresse e-mail invalide."
-        },
-        "password": {
-          "maxLength": "Mot de passe requis",
-          "minLength": "Le mot de passe doit comporter au moins 8 caractères",
-          "pattern": "Le mot de passe doit contenir au moins un chiffre, une lettre majuscule, une lettre minuscule et un caractère spécial",
-          "required": "Le mot de passe peut contenir jusqu'à 100 caractères"
-        },
-        "passwordConfirmation": {
-          "match": "Les mots de passe ne correspondent pas"
-        }
-      },
-      "password": {
-        "label": "Mot de passe"
-      },
-      "passwordConfirmation": {
-        "label": "Confirmation mot de passe"
-      },
-      "signupFailAlert": {
-        "description": "Une erreur s'est produite lors de l'inscription. Veuillez réessayer.",
-        "title": "Échec de l'inscription"
-      },
-      "signupSuccessToast": {
-        "description": "Confirmez votre adresse e-mail et connectez-vous.",
-        "title": "Inscription réussie"
-      }
-    },
-    "signup": "S'inscrire",
-    "submit": "Soumettre"
-  }
+	"Cockpit": {
+		"games": {
+			"allGames": "Tous les jeux",
+			"game": {
+				"date": "Temps",
+				"editTip": "Modifier le conseil",
+				"points": "Points",
+				"pointsInfo": "Vous obtenez 1 point pour chaque prédiction de but correcte, vous obtenez également un point pour la différence de buts correcte, si vous avez deviné correctement le vainqueur, cela vous donnera également un point et vous obtiendrez un point supplémentaire si vous avez deviné correctement le résultat.",
+				"result": "Résultat",
+				"teams": "Équipes",
+				"tip": "Conseil"
+			},
+			"title": "Jeux"
+		},
+		"metadata": {
+			"description": "Les derniers résultats et matchs à venir",
+			"title": "Tippspiel | Poste de pilotage"
+		},
+		"ranklist": {
+			"change": "Changement",
+			"name": "Nom",
+			"points": "Points",
+			"ranking": "Classement",
+			"title": "Aperçu du classement"
+		},
+		"rewards": "Récompenses",
+		"stats": {
+			"accuracy": "Précision",
+			"difference": "Différence",
+			"points": "Points",
+			"rank": "Rang",
+			"rankNumber": "{rank, selectordinal, one {#er} other {#e}}"
+		}
+	},
+	"Error": {
+		"cardButton": "Retour à la page d'accueil",
+		"cardContent": "Lors du traitement de votre demande, une erreur inattendue s'est produite. Nous avons enregistré l'erreur et nous nous efforcerons de la corriger.",
+		"cardTitle": "Nous avons eu du mal à répondre à votre demande",
+		"metadata": {
+			"description": "Page d'erreur",
+			"title": "Jeu de tippsiel | Erreur"
+		}
+	},
+	"ForgotPassword": {
+		"metadata": {
+			"description": "Page de réinitialisation du mot de passe",
+			"title": "Jeu de tippsiel | Mot de passe oublié"
+		},
+		"passwordForm": {
+			"cardDescription": "Entrez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre mot de passe.",
+			"cardTitle": "Réinitialiser le mot de passe"
+		},
+		"signin": "Se connecter.",
+		"signinRedirect": "Vous vous souvenez de votre mot de passe?"
+	},
+	"Home": {
+		"metadata": {
+			"description": "Home page",
+			"title": "Tippspiel | Home"
+		}
+	},
+	"Login": {
+		"metadata": {
+			"description": "Page de connexion",
+			"title": "Tippspiel | Login"
+		},
+		"pageDescription": "Connectez-vous pour accéder et participer au jeu de pronostics",
+		"pageTitle": "Se connecter",
+		"signup": "S'inscrire.",
+		"signupRedirect": "Vous n'avez pas encore de compte?",
+		"sozialLogin": {
+			"separator": "ou continuez avec"
+		}
+	},
+	"ResetPassword": {
+		"metadata": {
+			"description": "Réinitialiser le mot de passe",
+			"title": "Jeu de tippsiel | \nRéinitialiser le mot de passe"
+		},
+		"resetForm": {
+			"cardDescription": "Définissez votre nouveau mot de passe.",
+			"cardTitle": "Réinitialiser le mot de passe"
+		}
+	},
+	"Signup": {
+		"metadata": {
+			"description": "Page d'inscription",
+			"title": "Tippspiel | S'inscrire"
+		},
+		"pageDescription": "Inscrivez-vous pour accéder et participer au jeu de pronostics",
+		"pageTitle": "S'inscrire",
+		"signin": "Se connecter.",
+		"signinRedirect": "Vous avez déjà un compte?"
+	},
+	"common": {
+		"forgotPasswordForm": {
+			"email": {
+				"label": "E-mail"
+			},
+			"formSchemaMessages": {
+				"email": {
+					"required": "Adresse e-mail est nécessaire.",
+					"validated": "Adresse e-mail invalide."
+				}
+			},
+			"resetFailedAlert": {
+				"description": "Une erreur s'est produite lors de la réinitialisation du mot de passe. Veuillez réessayer.",
+				"title": "Échec de la réinitialisation"
+			},
+			"resetSuccessToast": {
+				"description": "Vérifiez votre courrier électronique pour trouver un lien permettant de réinitialiser votre mot de passe.",
+				"title": "Réinitialisation réussie"
+			}
+		},
+		"headerNav": {
+			"login": "Se connecter"
+		},
+		"login": "Se connecter",
+		"logout": "Se déconnecter",
+		"passwordInputAriaLabel": "Saisie du mot de passe",
+		"resetPassword": "Réinitialiser le mot de passe",
+		"resetPasswordForm": {
+			"formSchemaMessages": {
+				"password": {
+					"maxLength": "Mot de passe requis",
+					"minLength": "Le mot de passe doit comporter au moins 8 caractères",
+					"pattern": "Le mot de passe doit contenir au moins un chiffre, une lettre majuscule, une lettre minuscule et un caractère spécial",
+					"required": "Le mot de passe peut contenir jusqu'à 100 caractères"
+				},
+				"passwordConfirmation": {
+					"match": "Les mots de passe ne correspondent pas"
+				}
+			},
+			"password": {
+				"label": "Mot de passe"
+			},
+			"passwordConfirmation": {
+				"label": "Confirmation mot de passe"
+			},
+			"signupFailAlert": {
+				"description": "Une erreur s'est produite lors de la réinitialisation du mot de passe. Veuillez réessayer.",
+				"title": "Échec de la réinitialisation"
+			}
+		},
+		"saveNewPassword": "Enregistrer le nouveau mot de passe",
+		"signInForm": {
+			"email": {
+				"label": "E-mail"
+			},
+			"formSchemaMessages": {
+				"email": {
+					"required": "Adresse e-mail est nécessaire.",
+					"validated": "Adresse e-mail invalide."
+				},
+				"password": {
+					"maxLength": "Mot de passe requis",
+					"minLength": "Le mot de passe doit comporter au moins 8 caractères",
+					"pattern": "Le mot de passe doit contenir au moins un chiffre, une lettre majuscule, une lettre minuscule et un caractère spécial",
+					"required": "Le mot de passe peut contenir jusqu'à 100 caractères"
+				}
+			},
+			"password": {
+				"forgot": "Mot de passe oublié?",
+				"label": "Mot de passe"
+			},
+			"signinFailAlert": {
+				"description": "Une erreur s'est produite lors de la connexion. Veuillez réessayer.",
+				"title": "Échec de la connexion"
+			}
+		},
+		"signUpForm": {
+			"email": {
+				"label": "E-mail"
+			},
+			"formSchemaMessages": {
+				"email": {
+					"required": "Adresse e-mail est nécessaire.",
+					"validated": "Adresse e-mail invalide."
+				},
+				"password": {
+					"maxLength": "Mot de passe requis",
+					"minLength": "Le mot de passe doit comporter au moins 8 caractères",
+					"pattern": "Le mot de passe doit contenir au moins un chiffre, une lettre majuscule, une lettre minuscule et un caractère spécial",
+					"required": "Le mot de passe peut contenir jusqu'à 100 caractères"
+				},
+				"passwordConfirmation": {
+					"match": "Les mots de passe ne correspondent pas"
+				}
+			},
+			"password": {
+				"label": "Mot de passe"
+			},
+			"passwordConfirmation": {
+				"label": "Confirmation mot de passe"
+			},
+			"signupFailAlert": {
+				"description": "Une erreur s'est produite lors de l'inscription. Veuillez réessayer.",
+				"title": "Échec de l'inscription"
+			},
+			"signupSuccessToast": {
+				"description": "Confirmez votre adresse e-mail et connectez-vous.",
+				"title": "Inscription réussie"
+			}
+		},
+		"signup": "S'inscrire",
+		"submit": "Soumettre"
+	}
 }
