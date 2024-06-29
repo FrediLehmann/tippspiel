@@ -11,18 +11,27 @@ export async function GET(request: Request) {
 	}
 
 	try {
-		const games = await getGames();
-
 		const supabase = createClient(
 			process.env.NEXT_PUBLIC_SUPABASE_URL!,
 			process.env.SUPABASE_SERVICE_ROLE_KEY!
 		);
 
-		const { error } = await supabase.from('games').upsert(games);
+		const { data: predictionGames, error: urlsError } = await supabase
+			.from('prediction_gamse')
+			.select('results_url');
 
-		if (error) {
-			console.error(error);
-			throw error;
+		if (urlsError) {
+			console.error(urlsError);
+			throw urlsError;
+		}
+
+		const games = await getGames(predictionGames.map((game) => game.results_url));
+
+		const { error: upsertError } = await supabase.from('games').upsert(games);
+
+		if (upsertError) {
+			console.error(upsertError);
+			throw upsertError;
 		}
 
 		return new Response('OK', { status: 200 });

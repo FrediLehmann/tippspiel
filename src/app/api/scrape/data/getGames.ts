@@ -9,13 +9,12 @@ type Game = {
 	result: number[] | undefined;
 };
 
-export default async function getGames(): Promise<Game[]> {
+async function loadGamesFromUrl(url: string) {
 	try {
-		const site = await axios.get(
-			'https://matchcenter.aff-ffv.ch/default.aspx?oid=13&lng=1&s=2024&ln=13029&ls=22389&sg=63259&a=msp'
-		);
+		const site = await axios.get(url);
 
 		const $ = cheerio.load(site.data);
+
 		const gameResults = $("div[id*='MatchcenterMaster'][id$='tbResultate']").children();
 
 		let currentGameDay: string;
@@ -46,6 +45,18 @@ export default async function getGames(): Promise<Game[]> {
 
 		return games;
 	} catch (err) {
-		throw err;
+		console.error(err);
+		return [];
 	}
+}
+
+export default async function getGames(urls: string[]): Promise<Game[]> {
+	const games: Game[] = [];
+
+	for (const url of urls) {
+		const gamesFromUrl = await loadGamesFromUrl(url);
+		games.push(...gamesFromUrl);
+	}
+
+	return games;
 }
