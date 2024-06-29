@@ -51,7 +51,7 @@ export default function SignInForm() {
 				try {
 					const result = await signIn(values, locale);
 					if (!result.success) throw new Error('Could not sign in');
-					router.push('/account');
+					router.push('/cockpit');
 				} catch (e) {
 					setError(true);
 				}
