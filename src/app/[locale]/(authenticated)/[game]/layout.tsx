@@ -17,27 +17,13 @@ export default async function GameLayout({
 
 	const { data: predictionGame, error: predictionGameError } = await supabase
 		.from('prediction_games')
-		.select('id, team, name, slug')
+		.select('id')
 		.eq('slug', game)
 		.single();
 
 	if (!predictionGame || predictionGameError) notFound();
 
-	const { data: team } = await supabase
-		.from('teams')
-		.select('name')
-		.eq('id', predictionGame.team)
-		.single();
-
 	return (
-		<PredictionGameProvider
-			game={{
-				id: predictionGame.id,
-				team: team?.name || '',
-				name: predictionGame.name,
-				slug: predictionGame.slug
-			}}>
-			{children}
-		</PredictionGameProvider>
+		<PredictionGameProvider selectedGame={predictionGame.id}>{children}</PredictionGameProvider>
 	);
 }

@@ -1,6 +1,6 @@
 export type PredictionGame = {
-	id: string;
-	team: string;
+	id: number;
+	team?: string;
 	name: string;
-	slug: string;
+	slug?: string;
 };

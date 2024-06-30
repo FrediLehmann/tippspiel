@@ -2,20 +2,21 @@
 
 import { useRef } from 'react';
 
-import { setSelectedGame, useAppStore } from '@/lib/store';
+import { setGames, useAppStore } from '@/lib/store';
+import { PredictionGame } from '@/types/PredictionGame.type';
 
 export default function PredictionGameProvider({
-	selectedGame,
+	games,
 	children
 }: {
-	selectedGame: number;
+	games: PredictionGame[];
 	children: React.ReactNode;
 }) {
 	const initialized = useRef(false);
 
 	const store = useAppStore();
 	if (!initialized.current) {
-		store.dispatch(setSelectedGame(selectedGame));
+		store.dispatch(setGames(games));
 		initialized.current = true;
 	}
 

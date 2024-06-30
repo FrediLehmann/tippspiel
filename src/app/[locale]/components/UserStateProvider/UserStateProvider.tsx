@@ -2,8 +2,8 @@
 
 import { useRef } from 'react';
 
-import { type User, useAppStore } from '@/lib/store';
-import { setUser } from '@/lib/store';
+import { setUser, useAppStore } from '@/lib/store';
+import { User } from '@/types/User.type';
 
 export default function UserStateProvider({
 	user,
