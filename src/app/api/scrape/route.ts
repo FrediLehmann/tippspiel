@@ -18,7 +18,7 @@ export async function GET(request: Request) {
 
 		const { data: predictionGames, error: urlsError } = await supabase
 			.from('prediction_games')
-			.select('id, results_url');
+			.select('id, results_url, teams(name)');
 
 		if (urlsError) {
 			console.error(urlsError);

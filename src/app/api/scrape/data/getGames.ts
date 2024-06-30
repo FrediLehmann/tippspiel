@@ -10,7 +10,11 @@ type Game = {
 	result: number[] | undefined;
 };
 
-async function loadGamesFromUrl(game: { id: number; results_url: string }) {
+async function loadGamesFromUrl(game: {
+	id: number;
+	results_url: string;
+	teams: { name: string };
+}) {
 	try {
 		const site = await axios.get(game.results_url);
 
@@ -33,6 +37,8 @@ async function loadGamesFromUrl(game: { id: number; results_url: string }) {
 			const goalsHomeTeam = $(element).children().find('.goals > div').first().text().trim();
 			const goalsGuestTeam = $(element).children().find('.goals > div').last().text().trim();
 
+			if (homeTeam !== game.teams.name && guestTeam !== game.teams.name) return;
+
 			const gameDateTime = `${currentGameDay.split('.').reverse().join('-')} ${time}+01:00`;
 
 			games.push({
@@ -53,7 +59,11 @@ async function loadGamesFromUrl(game: { id: number; results_url: string }) {
 }
 
 export default async function getGames(
-	predictionGames: { id: number; results_url: string }[]
+	predictionGames: {
+		id: number;
+		results_url: string;
+		teams: { name: string };
+	}[]
 ): Promise<Game[]> {
 	const games: Game[] = [];
 
