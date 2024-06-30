@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 
 import { ProvideMessages } from '@/components';
+import { createServerClient } from '@/lib/supabase/createServerClient';
 
 import {
 	CurrentRank,
@@ -19,7 +20,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 	};
 }
 
-export default function Cockpit() {
+export default async function Cockpit() {
+	const supabase = createServerClient();
+
+	const { data: games, error: gamesError } = await supabase.from('games').select('*');
+
 	return (
 		<ProvideMessages namespaces={['common', 'Cockpit']}>
 			<main className="container mx-auto mb-4 mt-6 max-w-7xl md:mt-10">
