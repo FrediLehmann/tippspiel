@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 
 import { createServerClient } from '@/lib/supabase/createServerClient';
 
-import { PredictionGameProvider } from './components';
+import { GamesProvider, PredictionGameProvider } from './components';
 
 export default async function GameLayout({
 	params: { game },
@@ -23,7 +23,14 @@ export default async function GameLayout({
 
 	if (!predictionGame || predictionGameError) notFound();
 
+	const { data: games } = await supabase
+		.from('games')
+		.select('*')
+		.eq('prediction_game', predictionGame.id);
+
 	return (
-		<PredictionGameProvider selectedGame={predictionGame.id}>{children}</PredictionGameProvider>
+		<PredictionGameProvider selectedGame={predictionGame.id}>
+			<GamesProvider games={games || []}>{children}</GamesProvider>
+		</PredictionGameProvider>
 	);
 }

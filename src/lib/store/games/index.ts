@@ -1,6 +1,10 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 
-const initialState: { games: [] } = {
+import { Database } from '@/types/database.type';
+
+type Game = Database['public']['Tables']['games']['Row'];
+
+const initialState: { games: Game[] } = {
 	games: []
 };
 
@@ -8,7 +12,7 @@ const gamesSlice = createSlice({
 	name: 'games',
 	initialState,
 	reducers: {
-		setGames: (state, action: PayloadAction<[]>) => {
+		setGames: (state, action: PayloadAction<Game[]>) => {
 			state.games = action.payload;
 		}
 	}
