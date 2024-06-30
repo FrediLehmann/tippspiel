@@ -205,5 +205,9 @@
 		"resetPassword": "Reset password",
 		"saveNewPassword": "Save new password",
 		"passwordInputAriaLabel": "Password input"
+	},
+	"404": {
+		"notFoundTitle": "Page Not Found",
+		"notFoundDescription": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."
 	}
 }

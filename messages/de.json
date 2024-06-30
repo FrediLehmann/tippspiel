@@ -205,5 +205,9 @@
 		},
 		"signup": "Registrieren",
 		"submit": "Speichern"
+	},
+	"404": {
+		"notFoundTitle": "Seite nicht gefunden",
+		"notFoundDescription": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben."
 	}
 }

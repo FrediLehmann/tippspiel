@@ -1,4 +1,8 @@
 {
+	"404": {
+		"notFoundDescription": "La page que vous recherchez a peut-être été supprimée, son nom a changé ou est temporairement indisponible.",
+		"notFoundTitle": "Page non trouvée"
+	},
 	"Cockpit": {
 		"games": {
 			"allGames": "Tous les jeux",
