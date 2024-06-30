@@ -2,7 +2,7 @@
 
 import { useRef } from 'react';
 
-import { setGames, useAppStore } from '@/lib/store';
+import { setPredictionGames, useAppStore } from '@/lib/store';
 import { PredictionGame } from '@/types/PredictionGame.type';
 
 export default function PredictionGameProvider({
@@ -16,7 +16,7 @@ export default function PredictionGameProvider({
 
 	const store = useAppStore();
 	if (!initialized.current) {
-		store.dispatch(setGames(games));
+		store.dispatch(setPredictionGames(games));
 		initialized.current = true;
 	}
 

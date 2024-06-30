@@ -5,5 +5,5 @@ import { reducer as userReducer } from './user';
 
 export default combineReducers({
 	user: userReducer,
-	games: predictionGamesReducer
+	predictionGames: predictionGamesReducer
 });

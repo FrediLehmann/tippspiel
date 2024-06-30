@@ -3,7 +3,7 @@
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui';
 import {
 	selectedPredictionGame,
-	setSelectedGame,
+	setSelectedPredictionGame,
 	useAppDispatch,
 	useAppSelector
 } from '@/lib/store';
@@ -11,12 +11,12 @@ import {
 export default function PredictionGameStats() {
 	const dispatch = useAppDispatch();
 	const selectedGame = useAppSelector(selectedPredictionGame);
-	const games = useAppSelector((state) => state.games.games);
+	const games = useAppSelector((state) => state.predictionGames.games);
 
 	return (
 		<Select
 			value={selectedGame?.id.toString() ?? '0'}
-			onValueChange={(value) => dispatch(setSelectedGame(Number(value)))}>
+			onValueChange={(value) => dispatch(setSelectedPredictionGame(Number(value)))}>
 			<SelectTrigger className="w-full md:w-96">
 				<SelectValue />
 			</SelectTrigger>

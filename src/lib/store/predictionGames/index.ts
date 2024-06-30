@@ -8,17 +8,17 @@ const initialState: { games: PredictionGame[]; selectedGame: number } = {
 };
 
 const predictionGameSlice = createSlice({
-	name: 'user',
+	name: 'predictionGames',
 	initialState,
 	reducers: {
-		setGames: (state, action: PayloadAction<PredictionGame[]>) => {
+		setPredictionGames: (state, action: PayloadAction<PredictionGame[]>) => {
 			state.games = action.payload;
 		},
-		setSelectedGame: (state, action: PayloadAction<number>) => {
+		setSelectedPredictionGame: (state, action: PayloadAction<number>) => {
 			state.selectedGame = action.payload;
 		}
 	}
 });
 
-export const { setGames, setSelectedGame } = predictionGameSlice.actions;
+export const { setPredictionGames, setSelectedPredictionGame } = predictionGameSlice.actions;
 export const { reducer } = predictionGameSlice;
