@@ -4,7 +4,7 @@ import * as cheerio from 'cheerio';
 type Game = {
 	id: number;
 	prediction_game: number;
-	game_date: Date;
+	game_date: string;
 	home_team: string;
 	guest_team: string;
 	result: number[] | undefined;
@@ -12,9 +12,13 @@ type Game = {
 
 async function loadGamesFromUrl(game: {
 	id: number;
-	results_url: string;
-	teams: { name: string };
+	results_url: string | null;
+	teams?: { name: string } | null;
 }) {
+	if (!game.results_url) {
+		return [];
+	}
+
 	try {
 		const site = await axios.get(game.results_url);
 
@@ -37,14 +41,16 @@ async function loadGamesFromUrl(game: {
 			const goalsHomeTeam = $(element).children().find('.goals > div').first().text().trim();
 			const goalsGuestTeam = $(element).children().find('.goals > div').last().text().trim();
 
-			if (homeTeam !== game.teams.name && guestTeam !== game.teams.name) return;
+			if (homeTeam !== game.teams?.name && guestTeam !== game.teams?.name) {
+				return;
+			}
 
 			const gameDateTime = `${currentGameDay.split('.').reverse().join('-')} ${time}+01:00`;
 
 			games.push({
 				id: parseInt(gameId, 10),
 				prediction_game: game.id,
-				game_date: new Date(Date.parse(gameDateTime)),
+				game_date: new Date(Date.parse(gameDateTime)).toISOString(),
 				home_team: homeTeam,
 				guest_team: guestTeam,
 				result: [parseInt(goalsHomeTeam, 10), parseInt(goalsGuestTeam, 10)]
@@ -61,8 +67,8 @@ async function loadGamesFromUrl(game: {
 export default async function getGames(
 	predictionGames: {
 		id: number;
-		results_url: string;
-		teams: { name: string };
+		results_url: string | null;
+		teams: { name: string } | null;
 	}[]
 ): Promise<Game[]> {
 	const games: Game[] = [];

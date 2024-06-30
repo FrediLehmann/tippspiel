@@ -1,5 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 
+import { Database } from '@/types/database.type';
+
 import { getGames } from './data';
 
 export async function GET(request: Request) {
@@ -11,7 +13,7 @@ export async function GET(request: Request) {
 	}
 
 	try {
-		const supabase = createClient(
+		const supabase = createClient<Database>(
 			process.env.NEXT_PUBLIC_SUPABASE_URL!,
 			process.env.SUPABASE_SERVICE_ROLE_KEY!
 		);
@@ -20,7 +22,7 @@ export async function GET(request: Request) {
 			.from('prediction_games')
 			.select('id, results_url, teams(name)');
 
-		if (urlsError) {
+		if (!predictionGames || urlsError) {
 			console.error(urlsError);
 			throw urlsError;
 		}
