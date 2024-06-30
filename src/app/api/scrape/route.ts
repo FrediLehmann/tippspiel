@@ -17,15 +17,15 @@ export async function GET(request: Request) {
 		);
 
 		const { data: predictionGames, error: urlsError } = await supabase
-			.from('prediction_gamse')
-			.select('results_url');
+			.from('prediction_games')
+			.select('id, results_url');
 
 		if (urlsError) {
 			console.error(urlsError);
 			throw urlsError;
 		}
 
-		const games = await getGames(predictionGames.map((game) => game.results_url));
+		const games = await getGames(predictionGames);
 
 		const { error: upsertError } = await supabase.from('games').upsert(games);
 
